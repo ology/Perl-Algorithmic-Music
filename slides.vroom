@@ -245,26 +245,20 @@ __________
 * Produce a randomized, figured bass part
 
 ---- perl,i4
-Instantiate a Drummer and a Sequence Generator
-______________________________________________
+Instantiate a Drummer
+_____________________
 
 
 sub _build_drummer {
     my ($self) = @_;
     my $d = MIDI::Drummer::Tiny->new(
-        file   => $filename,
-        bars   => 4 * $repeat,
-        bpm    => $bpm,
-        reverb => $reverb,
-        volume => $volume,
+        file   => $self->filename,
+        bars   => 4 * $self->repeat,
+        bpm    => $self->bpm,
+        reverb => $self->reverb,
+        volume => $self->volume,
     );
     return $d;
-}
-
-sub _build_creator {
-    my ($self) = @_;
-    my $mcr = Music::CreatingRhythms->new;
-    return $mcr;
 }
 
 ---- perl,i4
