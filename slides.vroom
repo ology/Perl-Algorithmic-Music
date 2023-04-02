@@ -1,5 +1,4 @@
 ---- config
-# Basic config options.
 title: Algorithmic Music with Perl
 indent: 5
 auto_size: 1
