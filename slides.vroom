@@ -252,11 +252,11 @@ ______________________________________________
 sub _build_drummer {
     my ($self) = @_;
     my $d = MIDI::Drummer::Tiny->new(
-        file   => $self->filename,
-        bars   => 4 * $self->repeat,
-        bpm    => $self->my_bpm,
-        reverb => $self->dreverb,
-        volume => $self->dvolume,
+        file   => $filename,
+        bars   => 4 * $repeat,
+        bpm    => $bpm,
+        reverb => $reverb,
+        volume => $volume,
     );
     return $d;
 }
