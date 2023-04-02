@@ -273,14 +273,14 @@ _________________
 
 
 my $mdp = Music::Duration::Partition->new(
-    size => $self->bsize,
-    pool => $pool,
-    $self->bweights ? (weights => $weights) : (),
-    $self->bgroups  ? (groups => $groups)   : (),
+    size    => 4, # number of beats to render
+    pool    => [qw(hn dqn qn en)],
+    weights => [    1,  1, 2, 2 ],
+    groups  => [    1,  1, 1, 2 ],
 );
 my @motifs = map { $mdp->motif } 1 .. 2;
 
-my @pitches = get_scale_MIDI($self->bnote, $self->boctave, $self->bscale);
+my @pitches = get_scale_MIDI($note, $octave, $scale);
 my $voice = Music::VoiceGen->new(
     pitches   => \@pitches,
     intervals => [qw/-4 -3 -2 2 3 4/],
