@@ -286,6 +286,7 @@ my $voice = Music::VoiceGen->new(
     intervals => [qw/-4 -3 -2 2 3 4/],
 );
 my @notes1 = map { $voice->rand } $motifs[0]->@*;
+my @notes2 = map { $voice->rand } $motifs[1]->@*;
 
 ----
 Links
