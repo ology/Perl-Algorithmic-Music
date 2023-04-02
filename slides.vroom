@@ -1,0 +1,310 @@
+---- config
+# Basic config options.
+title: Algorithmic Music with Perl
+indent: 5
+auto_size: 1
+# height: 18
+# width: 69
+vim_opts: '-u NONE'
+skip: 0
+
+---- center
+Algorithmic Music with Perl
+
+by Gene Boggs (ology)
+
+TPRC 2023 - Toronto, ON
+
+----
+Overview
+________
+
+
+What this talk is *not* about:
+
++* Song or audio analysis
+
++* Real-time audio or MIDI processing
+
++* Low-level handling of MIDI events
+
++* Artificial intelligence techniques
+
++* Kittens
+
+----
+Overview
+________
+
+
+What this talk *is* about:
+
++* Procedural and object-oriented algorithms
+
++* High-level, OO MIDI score construction
+
++* Writing out MIDI files
+
++* Applied music theory
+
+----
+What is "Algorithmic Music"?
+____________________________
+
+
+* Computer-assisted composition where algorithms are used to create musical material
+  - For musical creations in and of themselves
+  - To generate musical ideas and satisfy curiosity
+  - For practice and study passages
+  - To make MIDI fragments to import into a DAW ("digital audio workstation")
+
+* Constructed with mathematical equations or grammars
+  - Or randomized selection of notes, rhythms, and phrases
+  - Or probabality logic
+  - Or stochastic processes
+  - Or rule-based methods
+  - (Or AI tools)
+
+----
+Types of Algorithmic Music Composition
+______________________________________
+
+
+* Generative Music
+  - Popularized by Brian Eno to describe music that is ever-different and changing, and created by a system
+  - Algorithms that can create different versions of the same piece of music
+
+* Rule-Based Music
+  - Uses musical grammars to generate musical compositions
+  - Uses musical constraints to restrict musical compositions
+  - Often composed according to a predetermined set of instructions
+
+* Probabilistic Music
+  - Uses randomness to create unique, sometimes complex and unpredictable sound
+  - Uses probability to "
+
+----
+Techniques for Generative Music
+_______________________________
+
+
+* Repetition
+  - Used to create a sense of continuity and familiarity
+
+* Variation
+  - Changing the pitch, rhythm, and timbre of a phrase, as well as adding or removing elements
+
+* Transformation
+  - Manipulating small details of a composition to create new, unique pieces of music
+
+----
+Techniques for Rule-Based Music
+_______________________________
+
+
+* Musical Grammars
+  - Structured sequences are created by creating a set of rules that determine which notes are chosen
+
+* Constraints
+  - A constraint solver searches for solutions, where variables are bound to values of its domain without violating any constraints
+
+----
+Techniques for Probabilistic Music
+__________________________________
+
+
+* Randomness
+  - Random sequences are created by randomly choosing notes from a pool of possibilities
+
+* Probability
+  - By changing the probabilities of rhythms, notes, chords, or phrases, different variations of a musical sequence can be created
+
+* Stochastic processes
+  - Described by a random probability distribution
+
+* Evolutionary methods
+  - Based on genetic algorithms using mutation and natural selection
+
+----
+A Little Music Theory
+_____________________
+
+
+* Basic elements: rhythm, harmony, and melody
+
+* Compositional elements such as song form, tempo, notes, chords, key signatures, intervals, and scales, etc.
+
+* Qualities such as pitch, tone, timbre, texture, dynamics, etc.
+
+----
+...Applied
+__________
+
+
+* How to construct a rhythm?
+
+* How to generate pleasing harmony?
+
+* How to make a melody?
+
+* How to structure a tune?
+
+---- perl,i4
+Basic Algorithms
+________________
+
+
+use MIDI::Util qw(setup_score);
+
+my $score = setup_score();
+$score->synch(
+  sub { bass($score) },
+  sub { treble($score) },
+);
+$score->write_score("$0.mid");
+
+sub bass {
+  my ($score) = @_;
+  for my $note (qw(C3 F3 G3 C4)) {
+    $score->n('hn', $note);
+  }
+}
+sub treble {
+  my ($score) = @_;
+  for my $note (qw(C4 D4 E4 F4)) {
+    $score->n('qn', $note);
+    $score->r('qn');
+  }
+}
+
+---- perl,i4
+Basic Algorithms
+________________
+
+
+use MIDI::Util qw(setup_score set_chan_patch);
+use Music::Scales qw(get_scale_MIDI);
+
+my $score = setup_score(bpm => 120, volume => 120);
+$score->synch(\&bass, \&treble);
+$score->write_score("$0.mid");
+
+sub bass {
+  set_chan_patch($score, 0, 35);
+  my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
+  for my $n (1 .. 4) {
+    my $pitch = $pitches[int rand @pitches];
+    $score->n('hn', $pitch);
+  }
+}
+
+sub treble {
+  set_chan_patch($score, 1, 0);
+  my @pitches = (
+    get_scale_MIDI('C', 4, 'major'),
+    get_scale_MIDI('C', 5, 'major'),
+  );
+  for my $n (1 .. 4) {
+    my $pitch = $pitches[int rand @pitches];
+    $score->n('qn', $pitch);
+    $score->r('qn');
+  }
+}
+
+---- perl,i4
+Basic Algorithms
+________________
+
+
+use Data::Dumper::Compact qw(ddc);
+use MIDI::Util qw(setup_score midi_format);
+use Music::Chord::Note ();
+
+my $score = setup_score();
+
+my $mcn = Music::Chord::Note->new;
+
+for my $c (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
+  my @chord = $mcn->chord_with_octave($c, 4);
+  @chord = midi_format(@chord);
+  print ddc(\@chord);
+  $score->n('wn', @chord);
+}
+
+$score->write_score("$0.mid");
+
+----
+GrooveTool
+__________
+
+
+* https://github.com/ology/Groove-Tool
+
+* Generate combinatorical drum patterns
+
+* Produce a randomized, figured bass part
+
+---- perl,i4
+Instantiate a Drummer and a Sequence Generator
+______________________________________________
+
+
+sub _build_drummer {
+    my ($self) = @_;
+    my $d = MIDI::Drummer::Tiny->new(
+        file   => $self->filename,
+        bars   => 4 * $self->repeat,
+        bpm    => $self->my_bpm,
+        reverb => $self->dreverb,
+        volume => $self->dvolume,
+    );
+    return $d;
+}
+
+sub _build_creator {
+    my ($self) = @_;
+    my $mcr = Music::CreatingRhythms->new;
+    return $mcr;
+}
+
+---- perl,i4
+Figured Bass Part
+_________________
+
+
+my $mdp = Music::Duration::Partition->new(
+    size => $self->bsize,
+    pool => $pool,
+    $self->bweights ? (weights => $weights) : (),
+    $self->bgroups  ? (groups => $groups)   : (),
+);
+my @motifs = map { $mdp->motif } 1 .. 2;
+
+my @pitches = get_scale_MIDI($self->bnote, $self->boctave, $self->bscale);
+my $voice = Music::VoiceGen->new(
+    pitches   => \@pitches,
+    intervals => [qw/-4 -3 -2 2 3 4/],
+);
+my @notes1 = map { $voice->rand } $motifs[0]->@*;
+
+----
+Links
+_____
+
+
+This slideshow was made with Vroom!
+
+* By ingy
+* http://search.cpan.org/dist/Vroom
+* http://github.com/ingydotnet/vroom-pm
+
+Algorithmic Composition Wiki:
+
+* https://github.com/ology/MIDI-Perl-HOWTO/wiki
+
+My latest album!
+
+* https://ology.net/XI/
+
+----
+== Fin
