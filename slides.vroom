@@ -2,8 +2,8 @@
 title: Algorithmic Music with Perl
 indent: 5
 auto_size: 1
-# height: 18
-# width: 69
+#height: 18
+#width: 69
 vim_opts: '-u NONE'
 skip: 0
 
@@ -18,7 +18,6 @@ TPRC 2023 - Toronto, ON
 ----
 Overview
 ________
-
 
 What this talk is *not* about:
 
@@ -36,7 +35,6 @@ What this talk is *not* about:
 Overview
 ________
 
-
 What this talk *is* about:
 
 +* Procedural algorithms
@@ -50,7 +48,6 @@ What this talk *is* about:
 ----
 What is "Algorithmic Music"?
 ____________________________
-
 
 * Computer-assisted composition where algorithms are used to create musical material
   - For musical creations in and of themselves
@@ -69,7 +66,6 @@ ____________________________
 Types of Algorithmic Music Composition
 ______________________________________
 
-
 * Generative Music
   - Popularized by Brian Eno to describe music that is ever-different and changing, and created by a system
   - Algorithms that can create different versions of the same piece of music
@@ -87,7 +83,6 @@ ______________________________________
 Techniques for Generative Music
 _______________________________
 
-
 * Repetition
   - Used to create a sense of continuity and familiarity
 
@@ -101,7 +96,6 @@ _______________________________
 Techniques for Rule-Based Music
 _______________________________
 
-
 * Musical Grammars
   - Structured sequences are created by creating a set of rules that determine which notes are chosen
 
@@ -111,7 +105,6 @@ _______________________________
 ----
 Techniques for Probabilistic Music
 __________________________________
-
 
 * Randomness
   - Random sequences are created by randomly choosing notes from a pool of possibilities
@@ -129,7 +122,6 @@ __________________________________
 Music Construction Modules
 __________________________
 
-
 App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar MIDI::Drummer::Tiny
 MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont
 MIDI::Tools MIDI::Trans MIDI::Tweaks MIDI::Util Music::AtonalUtil Music::Cadence
@@ -146,7 +138,6 @@ Music::VoiceGen Music::Voss String::Approx Text::Chord::Piano
 A Little Music Theory
 _____________________
 
-
 * Basic elements: rhythm, harmony, and melody
 
 * Compositional elements such as song form, tempo, notes, chords, key signatures, intervals, and scales, etc.
@@ -159,7 +150,6 @@ _____________________
 ...Applied
 __________
 
-
 * How to construct a rhythm?
 
 * How to generate pleasing harmony?
@@ -171,7 +161,6 @@ __________
 ---- perl,i4
 Basic Algorithms
 ________________
-
 
 use MIDI::Util qw(setup_score);
 
@@ -199,7 +188,6 @@ sub treble {
 ---- perl,i4
 Basic Algorithms
 ________________
-
 
 use MIDI::Util qw(setup_score set_chan_patch);
 use Music::Scales qw(get_scale_MIDI);
@@ -234,7 +222,6 @@ sub treble {
 Basic Algorithms
 ________________
 
-
 use Data::Dumper::Compact qw(ddc);
 use MIDI::Util qw(setup_score midi_format);
 use Music::Chord::Note ();
@@ -256,7 +243,6 @@ $score->write_score("$0.mid");
 GrooveTool
 __________
 
-
 * https://github.com/ology/Groove-Tool
 
 * Generate combinatorical drum patterns
@@ -266,7 +252,6 @@ __________
 ---- perl,i4
 Instantiate a Drummer
 _____________________
-
 
 sub _build_drummer {
     my ($self) = @_;
@@ -283,7 +268,6 @@ sub _build_drummer {
 ---- perl,i4
 Figured Bass Part
 _________________
-
 
 my $mdp = Music::Duration::Partition->new(
     size    => 4, # number of beats to render
@@ -304,7 +288,6 @@ my @notes2 = map { $voice->rand } $motifs[1]->@*;
 ----
 Links
 _____
-
 
 This slideshow:
 
