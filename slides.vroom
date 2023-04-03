@@ -126,6 +126,23 @@ __________________________________
   - Based on genetic algorithms using mutation and natural selection
 
 ----
+Music Construction Modules
+__________________________
+
+
+App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar MIDI::Drummer::Tiny
+MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont
+MIDI::Tools MIDI::Trans MIDI::Tweaks MIDI::Util Music::AtonalUtil Music::Cadence
+Music::Canon Music::ChordBot Music::Chord::Namer Music::Chord::Note Music::Chord::Positions
+Music::Chord::Progression Music::Chord::Progression::Transform Music::Duration
+Music::Duration::Partition Music::Gestalt Music::Guidonian Music::Harmonics
+Music::MelodicDevice::Inversion Music::MelodicDevice::Transposition
+Music::MelodicDevice::Ornamentation Music::NeoRiemannianTonnetz Music::Note
+Music::Note::Frequency Music::Note::Role::Operators Music::PitchNum Music::RecRhythm
+Music::RhythmSet Music::ScaleNote Music::Scales Music::Tempo Music::Tension Music::ToRoman
+Music::VoiceGen Music::Voss String::Approx Text::Chord::Piano
+
+----
 A Little Music Theory
 _____________________
 
