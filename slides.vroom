@@ -2,8 +2,6 @@
 title: Algorithmic Music with Perl
 indent: 5
 auto_size: 1
-#height: 18
-#width: 69
 vim_opts: '-u NONE'
 skip: 0
 
