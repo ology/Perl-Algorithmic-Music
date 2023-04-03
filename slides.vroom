@@ -39,9 +39,9 @@ ________
 
 What this talk *is* about:
 
-+* Procedural and object-oriented algorithms
++* Procedural algorithms
 
-+* High-level, OO MIDI score construction
++* High-level MIDI score construction
 
 +* Writing out MIDI files
 
