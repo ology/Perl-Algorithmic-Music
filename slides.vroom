@@ -65,8 +65,9 @@ Types of Algorithmic Music Composition
 ______________________________________
 
 * Generative Music
-  - Popularized by Brian Eno to describe music that is ever-different and changing, and created by a system
-  - Algorithms that can create different versions of the same piece of music
+  - Term popularized by Brian Eno to describe music that is ever-different,
+    changing, and created by a system
+  - Algorithms that can create different versions of music
 
 * Rule-Based Music
   - Uses musical grammars to generate musical compositions
@@ -74,8 +75,9 @@ ______________________________________
   - Often composed according to a predetermined set of instructions
 
 * Probabilistic Music
-  - Uses randomness to create unique, sometimes complex and unpredictable sound
-  - Uses probability to "
+  - Uses randomness to create unique, sometimes complex and unpredictable
+    sound
+  - Uses probability to create unique, complex, unpredictable sound
 
 ----
 Techniques for Generative Music
@@ -85,30 +87,36 @@ _______________________________
   - Used to create a sense of continuity and familiarity
 
 * Variation
-  - Changing the pitch, rhythm, and timbre of a phrase, as well as adding or removing elements
+  - Changing the pitch, rhythm, and timbre of a phrase, as well as
+    adding or removing elements
 
 * Transformation
-  - Manipulating small details of a composition to create new, unique pieces of music
+  - Manipulating small details of a composition to create new,
+    unique pieces of music
 
 ----
 Techniques for Rule-Based Music
 _______________________________
 
 * Musical Grammars
-  - Structured sequences are created by creating a set of rules that determine which notes are chosen
+  - Structured sequences are created by creating a set of rules that
+    determine which notes are chosen
 
 * Constraints
-  - A constraint solver searches for solutions, where variables are bound to values of its domain without violating any constraints
+  - A constraint solver searches for solutions, where variables are bound
+    to values of its domain without violating any constraints
 
 ----
 Techniques for Probabilistic Music
 __________________________________
 
 * Randomness
-  - Random sequences are created by randomly choosing notes from a pool of possibilities
+  - Random sequences are created by randomly choosing notes from a pool
+    of possibilities
 
 * Probability
-  - By changing the probabilities of rhythms, notes, chords, or phrases, different variations of a musical sequence can be created
+  - By changing the probabilities of rhythms, notes, chords, or phrases,
+    different variations of a musical sequence can be created
 
 * Stochastic processes
   - Described by a random probability distribution
@@ -138,11 +146,13 @@ _____________________
 
 * Basic elements: rhythm, harmony, and melody
 
-* Compositional elements such as song form, tempo, notes, chords, key signatures, intervals, and scales, etc.
+* Compositional elements such as song form, tempo, notes, chords, key signatures,
+  intervals, and scales, etc.
 
 * Qualities such as pitch, tone, timbre, texture, dynamics, etc.
 
-* A "motif" is a brief melodic or rhythmic formula out of which longer passages are developed
+* A "motif" is a brief melodic or rhythmic formula out of which longer passages
+  are developed
 
 ----
 ...Applied
