@@ -5,7 +5,7 @@ Gene Boggs (ology)
 TPRC 2023 - Toronto, ON
 
 =begin note
- 
+
 Let's talk about music!
 
 Who here is a musican of any degree or persuasion?
@@ -13,7 +13,7 @@ Who here is a musican of any degree or persuasion?
 Who has thought about music theory?
 
 Ok! Just curious. :-)
- 
+
 =end note
 
 =head1 What this talk is NOT about:
@@ -42,6 +42,9 @@ Kittens
 
 =back
 
+=begin note
+=end note
+
 =head1 What this talk IS about:
 
 =over
@@ -63,6 +66,9 @@ Writing out MIDI files
 Applied music theory
 
 =back
+
+=begin note
+=end note
 
 =head1 What is Algorithmic Music?
 
@@ -87,6 +93,9 @@ For practice and study passages
 To make fragments to import into a DAW ("digital audio workstation")
 
 =back
+
+=begin note
+=end note
 
 =head1 What is Algorithmic Music?
 
@@ -113,6 +122,9 @@ Or stochastic processes
 Or rule-based methods
 
 =back
+
+=begin note
+=end note
 
 =head1 Types of Algorithmic Music
 
@@ -170,6 +182,9 @@ Use of stochastic processes
 
 =back
 
+=begin note
+=end note
+
 =head1 Techniques for Generative Music
 
 =head4 Repetition
@@ -202,6 +217,9 @@ Manipulating small details of a composition to create new, unique pieces of musi
 
 =back
 
+=begin note
+=end note
+
 =head1 Techniques for Rule-Based Music
 
 =head4 Musical Grammars
@@ -223,6 +241,9 @@ Structured sequences are created by creating a set of rules that determine which
 A constraint solver searches for solutions, where variables are bound to values of its domain without violating any constraints
 
 =back
+
+=begin note
+=end note
 
 =head1 Techniques for Statistical Music
 
@@ -246,6 +267,9 @@ By changing the probabilities of rhythms, notes, chords, or phrases, different v
 
 =back
 
+=begin note
+=end note
+
 =head1 Techniques for Statistical Music
 
 =head4 Stochastic processes
@@ -267,6 +291,9 @@ Described by a random probability distribution
 Based on genetic algorithms using mutation and natural selection
 
 =back
+
+=begin note
+=end note
 
 =head1 A Little Music Theory
 
@@ -290,6 +317,9 @@ A "motif" is a brief melodic or rhythmic formula out of which longer passages ar
 
 =back
 
+=begin note
+=end note
+
 =head1 Fundamental Questions
 
 =over
@@ -312,9 +342,15 @@ How do you structure a tune?
 
 =back
 
+=begin note
+=end note
+
 =head1 Music Modules on CPAN
 
 App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar MIDI::Drummer::Tiny MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont MIDI::Tools MIDI::Trans MIDI::Tweaks MIDI::Util Music::AtonalUtil Music::Cadence Music::Canon Music::ChordBot Music::Chord::Namer Music::Chord::Note Music::Chord::Positions Music::Chord::Progression Music::Chord::Progression::Transform Music::Duration Music::Duration::Partition Music::Gestalt Music::Guidonian Music::Harmonics Music::MelodicDevice::Inversion Music::MelodicDevice::Transposition Music::MelodicDevice::Ornamentation Music::NeoRiemannianTonnetz Music::Note Music::Note::Frequency Music::Note::Role::Operators Music::PitchNum Music::RecRhythm Music::RhythmSet Music::ScaleNote Music::Scales Music::Tempo Music::Tension Music::ToRoman Music::VoiceGen Music::Voss String::Approx Text::Chord::Piano (45+!)
+
+=begin note
+=end note
 
 =head1 Basic Algorithms 1 of 2
 
@@ -332,6 +368,9 @@ $score->synch(
 $score->write_score("$0.mid");
 
 =end perl
+
+=begin note
+=end note
 
 =head1 Basic Algorithms 2 of 2
 
@@ -353,6 +392,9 @@ sub treble {
 
 =end perl
 
+=begin note
+=end note
+
 =head1 Basic Algorithms 1 of 3
 
 =begin perl
@@ -367,6 +409,9 @@ $score->synch(\&bass, \&treble);
 $score->write_score("$0.mid");
 
 =end perl
+
+=begin note
+=end note
 
 =head1 Basic Algorithms 2 of 3
 
@@ -384,6 +429,9 @@ sub bass {
 }
 
 =end perl
+
+=begin note
+=end note
 
 =head1 Basic Algorithms 3 of 3
 
@@ -405,6 +453,9 @@ sub treble {
 
 =end perl
 
+=begin note
+=end note
+
 =head1 Basic Algorithms 1 of 2
 
 =begin perl
@@ -418,6 +469,9 @@ my $score = setup_score();
 my $mcn = Music::Chord::Note->new;
 
 =end perl
+
+=begin note
+=end note
 
 =head1 Basic Algorithms 2 of 2
 
