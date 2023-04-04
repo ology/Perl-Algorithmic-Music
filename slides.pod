@@ -564,7 +564,7 @@ Produces a randomized, figured bass part
 
 =item *
 
-It's L<on github|https://github.com/ology/Groove-Tool>
+Find it L<on github|https://github.com/ology/Groove-Tool>
 
 =back
 
