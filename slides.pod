@@ -407,7 +407,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Foo
+This slide shows the score and synchronization.
 
 =end note
 
@@ -433,7 +433,11 @@ sub treble {
 
 =begin note
 
-Foo
+This slide shows the sychornized parts.
+
+Here we use literal notes with octaves.
+
+Also this is the "proper" way to do things, in terms of CS. But...
 
 =end note
 
@@ -454,7 +458,13 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Foo
+Here we use filthy global variables! I'll be sad if you leave now though! Anyway,
+
+1 Music programs are not "mission critical."
+
+2 They are not "time-sensitive" either. The code just creates MIDI files, rather than real-time processing.
+
+Anyway, here we show the Music::Scales module and show score settings.
 
 =end note
 
@@ -477,7 +487,11 @@ sub bass {
 
 =begin note
 
-Foo
+And here is the bass part.
+
+First we change to the fretless bass patch on channel zero and get the scale pitches in a non-clashing scale.
+
+Next we add four random pitches to the score, for a half-note each.
 
 =end note
 
@@ -503,7 +517,9 @@ sub treble {
 
 =begin note
 
-Foo
+And here is the treble part. It uses a scale of two octaves, as opposed to the one of the previous bass routine.
+
+And instead of half-notes, we add a quarter pitched note and a quarter-note rest.
 
 =end note
 
@@ -570,7 +586,7 @@ Find it L<on github|https://github.com/ology/Groove-Tool>
 
 =begin note
 
-Foo
+Like Euclidean beats
 
 =end note
 
@@ -590,7 +606,9 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =begin note
 
-Foo
+A lot of everything you need to add drums to a MIDI score and more.
+
+For the GrooveTool, combinatorial patterns are "juxtaposed" = beats!
 
 =end note
 
@@ -611,7 +629,7 @@ my @motifs = map { $mdp->motif } 1 .. 2;
 
 =begin note
 
-Foo
+Rhythmic phrase generator
 
 =end note
 
@@ -633,7 +651,7 @@ my @notes2 = map { $voice->rand } $motifs[1]->@*;
 
 =begin note
 
-Foo
+Voices
 
 =end note
 
