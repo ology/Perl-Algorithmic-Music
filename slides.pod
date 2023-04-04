@@ -675,7 +675,7 @@ Voices
 
 =head1 Links
 
-L<This slideshow|https://github.com/ology/Perl-Algorithmic-Music>
+This Slideshow: L<https://github.com/ology/Perl-Algorithmic-Music>
 
 L<Made with S5|http://search.cpan.org/dist/Pod::S5>
 
