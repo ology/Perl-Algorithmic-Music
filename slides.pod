@@ -717,7 +717,7 @@ L<This Slideshow|https://ology.net/dev/Perl-Algorithmic-Music/>
 (L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
 and L<made with S5|http://search.cpan.org/dist/Pod::S5>)
 
-L<The GrooveTool|https://github.com/ology/Groove-Tool>
+L<The GrooveTool|https://github.com/ology/Groove-Tool> on GitHub
 
 L<Algorithmic Composition Wiki|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
 
