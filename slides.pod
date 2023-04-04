@@ -421,7 +421,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-This slide shows the score and synchronization.
+This slide is a complete program that shows the score and synchronization.
 
 =end note
 
@@ -474,7 +474,7 @@ $score->write_score("$0.mid");
 
 Here we use filthy global variables! I'll be sad if you leave now though.
 
-Anyway, music programs are not "mission critical."
+Music programs are not "mission critical."
 
 And they are not "time-sensitive" either. The code just creates MIDI files, rather than real-time processing.
 
