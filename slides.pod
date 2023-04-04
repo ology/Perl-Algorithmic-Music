@@ -100,13 +100,13 @@ For practice and study with rhythms (i.e. a better metronome) and etudes
 
 =item *
 
-To make fragments to import into a larger context. Possibly with a DAW ("digital audio workstation")
+To make fragments to import into a larger context - possibly with a DAW ("digital audio workstation")
 
 =back
 
 =begin note
 
-...
+Like Reaper, Ableton, or Apple Logic, etc.
 
 =end note
 
