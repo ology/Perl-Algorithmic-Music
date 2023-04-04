@@ -714,9 +714,8 @@ Voices with the excellent Music::VoiceGen module by Jeremy Mates (AKA thrig)
 =head1 Links
 
 L<This Slideshow|https://ology.net/dev/Perl-Algorithmic-Music/>
-
-L<On GitHub|https://github.com/ology/Perl-Algorithmic-Music>
-(L<Made with S5|http://search.cpan.org/dist/Pod::S5>)
+(L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
+and L<made with S5|http://search.cpan.org/dist/Pod::S5>)
 
 L<The GrooveTool|https://github.com/ology/Groove-Tool>
 
