@@ -4,6 +4,18 @@ Gene Boggs (ology)
 
 TPRC 2023 - Toronto, ON
 
+=begin note
+ 
+Let's talk about music!
+
+Who here is a musican of any degree or persuasion?
+
+Who has thought about music theory?
+
+Ok! Just curious. :-)
+ 
+=end note
+
 =head1 What this talk is NOT about:
 
 =over
