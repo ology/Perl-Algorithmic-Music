@@ -717,9 +717,9 @@ L<This Slideshow|https://ology.net/dev/Perl-Algorithmic-Music/>
 (L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
 and L<made with S5|https://metacpan.org/dist/Pod-S5>)
 
-L<The GrooveTool|https://github.com/ology/Groove-Tool> on GitHub
-
 L<Algorithmic Composition Wiki|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
+
+L<The GrooveTool|https://github.com/ology/Groove-Tool> on GitHub
 
 Shameless plug: My L<latest album "XI"|https://ology.net/XI/> is on youtube, spotify, apple music, etc., and includes the partially algorithmic tune, "Permutational." Check it out!
 
