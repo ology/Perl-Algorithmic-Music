@@ -628,13 +628,14 @@ my $d = MIDI::Drummer::Tiny->new(
     bpm    => $self->bpm,
     reverb => $self->reverb,
     volume => $self->volume,
+    # etc...
 );
 
 =end perl
 
 =begin note
 
-A lot of everything you need to add drums to a MIDI score and more.
+Everything you need to add drums to a MIDI score and more.
 
 For the GrooveTool, combinatorial patterns are "juxtaposed" = beats!
 
