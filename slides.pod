@@ -663,6 +663,8 @@ Where the $key is a unique phrase identifier.
 
 And "pfold" is another type of combinatorial pattern that can be generated.
 
+Looks like I could simplify the syntax with a dispatch table, now that I look at it...
+
 =end note
 
 =head1 Figured Bass Part 1 of 2
