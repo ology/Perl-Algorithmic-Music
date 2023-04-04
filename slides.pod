@@ -360,6 +360,8 @@ A "motif" is a brief melodic or rhythmic formula out of which longer passages ar
 
 =begin note
 
+Other than dynamics and possibly texture, these qualities are not easily achieved with MIDI.
+
 This (motif) term will be important later.
 
 =end note
