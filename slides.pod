@@ -422,7 +422,7 @@ my $score = setup_score();
 $score->synch(
     sub { bass($score) },
     sub { treble($score) },
-);
+) for 1 .. 2;
 
 $score->write_score("$0.mid");
 
@@ -458,6 +458,9 @@ sub treble {
 
 =begin note
 
+> vim ex-02-02.pl
+:!rm %.mid ; perl % ; timidity %.mid
+
 This slide shows the sychornized parts.
 
 Here we use literal notes with octaves.
@@ -475,7 +478,10 @@ use Music::Scales qw(get_scale_MIDI);
 
 my $score = setup_score(bpm => 120, volume => 120);
 
-$score->synch(\&bass, \&treble);
+$score->synch(
+    \&bass,
+    \&treble,
+) for 1 .. 2;
 
 $score->write_score("$0.mid");
 
