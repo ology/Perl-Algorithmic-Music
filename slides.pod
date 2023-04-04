@@ -600,7 +600,7 @@ Here is the meat of the algorithm: Play a list of named chords held for a whole 
 
 =item *
 
-Generates combinatorical drum patterns
+Generates combinatorial drum patterns
 
 =item *
 
