@@ -1,6 +1,6 @@
 =head1 Algorithmic Music with Perl
 
-Gene Boggs (ology)
+L<Gene Boggs (ology)|https://github.com/ology>
 
 TPRC 2023 - Toronto, ON
 
@@ -361,8 +361,8 @@ use MIDI::Util qw(setup_score);
 my $score = setup_score();
 
 $score->synch(
-  sub { bass($score) },
-  sub { treble($score) },
+    sub { bass($score) },
+    sub { treble($score) },
 );
 
 $score->write_score("$0.mid");
@@ -377,17 +377,17 @@ $score->write_score("$0.mid");
 =begin perl
 
 sub bass {
-  my ($score) = @_;
-  for my $note (qw(C3 F3 G3 C4)) {
-    $score->n('hn', $note);
-  }
+    my ($score) = @_;
+    for my $note (qw(C3 F3 G3 C4)) {
+        $score->n('hn', $note);
+    }
 }
 sub treble {
-  my ($score) = @_;
-  for my $note (qw(C4 D4 E4 F4)) {
-    $score->n('qn', $note);
-    $score->r('qn');
-  }
+    my ($score) = @_;
+    for my $note (qw(C4 D4 E4 F4)) {
+        $score->n('qn', $note);
+        $score->r('qn');
+    }
 }
 
 =end perl
@@ -418,14 +418,14 @@ $score->write_score("$0.mid");
 =begin perl
 
 sub bass {
-  set_chan_patch($score, 0, 35);
+    set_chan_patch($score, 0, 35);
 
-  my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
+    my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
 
-  for my $n (1 .. 4) {
-    my $pitch = $pitches[int rand @pitches];
-    $score->n('hn', $pitch);
-  }
+    for my $n (1 .. 4) {
+        my $pitch = $pitches[int rand @pitches];
+        $score->n('hn', $pitch);
+    }
 }
 
 =end perl
@@ -438,17 +438,17 @@ sub bass {
 =begin perl
 
 sub treble {
-  set_chan_patch($score, 1, 0);
-  my @pitches = (
-    get_scale_MIDI('C', 4, 'major'),
-    get_scale_MIDI('C', 5, 'major'),
-  );
+    set_chan_patch($score, 1, 0);
+    my @pitches = (
+        get_scale_MIDI('C', 4, 'major'),
+        get_scale_MIDI('C', 5, 'major'),
+    );
 
-  for my $n (1 .. 4) {
-    my $pitch = $pitches[int rand @pitches];
-    $score->n('qn', $pitch);
-    $score->r('qn');
-  }
+    for my $n (1 .. 4) {
+        my $pitch = $pitches[int rand @pitches];
+        $score->n('qn', $pitch);
+        $score->r('qn');
+    }
 }
 
 =end perl
@@ -478,16 +478,110 @@ my $mcn = Music::Chord::Note->new;
 =begin perl
 
 for my $c (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
-  my @chord = $mcn->chord_with_octave($c, 4);
+    my @chord = $mcn->chord_with_octave($c, 4);
 
-  @chord = midi_format(@chord);
-  print ddc(\@chord);
+    @chord = midi_format(@chord);
+    print ddc(\@chord);
 
-  $score->n('wn', @chord);
+    $score->n('wn', @chord);
 }
 
 $score->write_score("$0.mid");
 
 =end perl
+
+=begin note
+=end note
+
+=head1 GrooveTool
+
+=over
+
+=item *
+
+Generate combinatorical drum patterns
+
+=item *
+
+Produce a randomized, figured bass part
+
+=back
+
+=begin note
+=end note
+
+=head1 Instantiate a Drummer
+
+=begin perl
+
+sub _build_drummer {
+    my ($self) = @_;
+    my $d = MIDI::Drummer::Tiny->new(
+        file   => $self->filename,
+        bars   => 4 * $self->repeat,
+        bpm    => $self->bpm,
+        reverb => $self->reverb,
+        volume => $self->volume,
+    );
+    return $d;
+}
+
+=end perl
+
+=begin note
+=end note
+
+=head1 Figured Bass Part 1 of 2
+
+=begin perl
+
+my $mdp = Music::Duration::Partition->new(
+    size    => 4, # number of beats to render
+    pool    => [qw(hn dqn qn en)],
+    weights => [    1,  1, 2, 2 ],
+    groups  => [    1,  1, 1, 2 ],
+);
+
+my @motifs = map { $mdp->motif } 1 .. 2;
+
+=end perl
+
+=begin note
+=end note
+
+=head2 Figured Bass Part 1 of 2
+
+=begin perl
+
+my @pitches = get_scale_MIDI($note, $octave, $scale);
+
+my $voice = Music::VoiceGen->new(
+    pitches   => \@pitches,
+    intervals => [qw/-4 -3 -2 2 3 4/],
+
+);
+my @notes1 = map { $voice->rand } $motifs[0]->@*;
+my @notes2 = map { $voice->rand } $motifs[1]->@*;
+
+=end perl
+
+=begin note
+=end note
+
+=head1 Links
+
+This slideshow:
+
+At L<https://github.com/ology/Perl-Algorithmic-Music>
+
+L<Made with http://search.cpan.org/dist/Vroom>
+
+Algorithmic Composition Wiki:
+
+L<https://github.com/ology/MIDI-Perl-HOWTO/wiki>
+
+My latest album!
+
+L<https://ology.net/XI/>
 
 =cut
