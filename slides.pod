@@ -637,7 +637,7 @@ my $d = MIDI::Drummer::Tiny->new(
 
 Everything you need to add drums to a MIDI score and more.
 
-For the GrooveTool, combinatorial patterns are "juxtaposed" = beats!
+For the GrooveTool, combinatorial patterns are "juxtaposed" - i.e. beats!
 
 =end note
 
