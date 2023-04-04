@@ -46,7 +46,7 @@ Kittens
 
 =begin note
 
-...
+Events like note_on, note_off, sysex, etc.
 
 =end note
 
