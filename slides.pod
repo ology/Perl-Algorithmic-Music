@@ -128,7 +128,7 @@ Or rule-based methods
 
 =head1 Types of Algorithmic Music
 
-=head4 Generative
+=head4 "Generative"
 
 =over
 
