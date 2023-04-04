@@ -614,7 +614,7 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =begin note
 
-Like Euclidean beats
+Like Euclidean rhythms or Christoffel-words
 
 =end note
 
