@@ -649,7 +649,7 @@ Algorithmic Composition Wiki:
 
 L<https://github.com/ology/MIDI-Perl-HOWTO/wiki>
 
-My latest album!
+Shameless plug: My latest album including the partially algorithmic tune, "Permutational"
 
 L<https://ology.net/XI/>
 
