@@ -62,7 +62,7 @@ Procedural algorithms
 
 =item *
 
-High-level MIDI score construction
+High-level, OO MIDI score construction
 
 =item *
 
