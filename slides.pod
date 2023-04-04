@@ -641,6 +641,28 @@ For the GrooveTool, combinatorial patterns are "juxtaposed" = beats!
 
 =end note
 
+=head1 Drummer Decisions
+
+=begin perl
+
+if ($part->{style} eq 'euclid') {
+    push @phrases, sub { $self->euclidean_part($part, $key) };
+}
+elsif ($part->{style} eq 'christoffel') {
+    push @phrases, sub { $self->christoffel_part($part, $key) };
+}
+elsif ($part->{style} eq 'pfold') {
+    push @phrases, sub { $self->pfold_part($part, $key) };
+}
+
+=end perl
+
+=begin note
+
+Where the $key is a unique phrase identifier.
+
+=end note
+
 =head1 Figured Bass Part 1 of 2
 
 =begin perl
