@@ -548,6 +548,9 @@ sub treble {
 
 =begin note
 
+> vim ex-04-03.pl
+:!rm %.mid ; perl % ; timidity %.mid
+
 And here is the treble part. It uses a scale of two octaves, as opposed to the one of the previous bass routine.
 
 And instead of half-notes, we add a quarter pitched note and a quarter-note rest.
