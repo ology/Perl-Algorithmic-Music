@@ -562,6 +562,10 @@ Generates combinatorical drum patterns
 
 Produces a randomized, figured bass part
 
+=item *
+
+It's L<on github|https://github.com/ology/Groove-Tool>
+
 =back
 
 =begin note
