@@ -278,7 +278,7 @@ A "motif" is a brief melodic or rhythmic formula out of which longer passages ar
 
 =back
 
-=head1 Questions
+=head1 Fundamental Questions
 
 =over
 
