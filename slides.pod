@@ -76,7 +76,7 @@ Applied music theory
 
 =begin note
 
-...
+Because algorithmic music "exercises" a theory.
 
 =end note
 
