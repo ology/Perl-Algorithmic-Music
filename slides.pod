@@ -48,6 +48,8 @@ Kittens
 
 Events like note_on, note_off, sysex, etc.
 
+AI such as generative adversarial networks, etc.
+
 =end note
 
 =head1 What this talk IS about:
