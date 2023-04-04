@@ -43,6 +43,9 @@ Kittens
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 What this talk IS about:
@@ -68,6 +71,9 @@ Applied music theory
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 What is Algorithmic Music?
@@ -95,6 +101,9 @@ To make fragments to import into a DAW ("digital audio workstation")
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 What is Algorithmic Music?
@@ -124,6 +133,9 @@ Or rule-based methods
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Types of Algorithmic Music
@@ -183,6 +195,9 @@ Use of stochastic processes
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Techniques for Generative Music
@@ -218,6 +233,9 @@ Manipulating small details of a composition to create new, unique pieces of musi
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Techniques for Rule-Based Music
@@ -243,6 +261,9 @@ A constraint solver searches for solutions, where variables are bound to values 
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Techniques for Statistical Music
@@ -268,6 +289,9 @@ By changing the probabilities of rhythms, notes, chords, or phrases, different v
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Techniques for Statistical Music
@@ -293,6 +317,9 @@ Based on genetic algorithms using mutation and natural selection
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 A Little Music Theory
@@ -318,6 +345,9 @@ A "motif" is a brief melodic or rhythmic formula out of which longer passages ar
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Fundamental Questions
@@ -343,6 +373,9 @@ How do you structure a tune?
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Music Modules on CPAN
@@ -350,6 +383,9 @@ How do you structure a tune?
 App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar MIDI::Drummer::Tiny MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont MIDI::Tools MIDI::Trans MIDI::Tweaks MIDI::Util Music::AtonalUtil Music::Cadence Music::Canon Music::ChordBot Music::Chord::Namer Music::Chord::Note Music::Chord::Positions Music::Chord::Progression Music::Chord::Progression::Transform Music::Duration Music::Duration::Partition Music::Gestalt Music::Guidonian Music::Harmonics Music::MelodicDevice::Inversion Music::MelodicDevice::Transposition Music::MelodicDevice::Ornamentation Music::NeoRiemannianTonnetz Music::Note Music::Note::Frequency Music::Note::Role::Operators Music::PitchNum Music::RecRhythm Music::RhythmSet Music::ScaleNote Music::Scales Music::Tempo Music::Tension Music::ToRoman Music::VoiceGen Music::Voss String::Approx Text::Chord::Piano (B<45+!>)
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 1 of 2
@@ -370,6 +406,9 @@ $score->write_score("$0.mid");
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 2 of 2
@@ -393,6 +432,9 @@ sub treble {
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 1 of 3
@@ -411,6 +453,9 @@ $score->write_score("$0.mid");
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 2 of 3
@@ -431,6 +476,9 @@ sub bass {
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 3 of 3
@@ -454,6 +502,9 @@ sub treble {
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 1 of 2
@@ -471,6 +522,9 @@ my $mcn = Music::Chord::Note->new;
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Basic Algorithms 2 of 2
@@ -491,6 +545,9 @@ $score->write_score("$0.mid");
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 GrooveTool
@@ -508,6 +565,9 @@ Produce a randomized, figured bass part
 =back
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Instantiate a Drummer
@@ -529,6 +589,9 @@ sub _build_drummer {
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Figured Bass Part 1 of 2
@@ -547,6 +610,9 @@ my @motifs = map { $mdp->motif } 1 .. 2;
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head2 Figured Bass Part 1 of 2
@@ -566,6 +632,9 @@ my @notes2 = map { $voice->rand } $motifs[1]->@*;
 =end perl
 
 =begin note
+
+Foo
+
 =end note
 
 =head1 Links
