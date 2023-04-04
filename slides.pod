@@ -600,7 +600,7 @@ Here is the meat of the algorithm: Play a list of named chords held for a whole 
 
 =item *
 
-Generates combinatorial drum patterns
+Generates combinatorial rhythmic patterns like Euclidean or Christoffel words
 
 =item *
 
@@ -614,7 +614,7 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =begin note
 
-Like Euclidean rhythms or Christoffel-words
+...
 
 =end note
 
