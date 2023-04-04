@@ -82,7 +82,7 @@ Because algorithmic music "exercises" a theory.
 
 =head1 What is Algorithmic Music?
 
-=head4 Computer-assisted composition where algorithms are used to create musical material.
+Computer-assisted composition where algorithms are used to create musical material.
 
 =over
 
@@ -144,7 +144,7 @@ Or rule-based methods
 
 =head1 Types of Algorithmic Music
 
-=head4 "Generative"
+"Generative"
 
 =over
 
@@ -166,7 +166,7 @@ SKIP
 
 =head1 Types of Algorithmic Music
 
-=head4 Rule-Based
+Rule-Based
 
 =over
 
@@ -192,7 +192,7 @@ SKIP
 
 =head1 Types of Algorithmic Music
 
-=head4 Aleatoric and Statistical
+Aleatoric and Statistical
 
 =over
 
@@ -218,7 +218,7 @@ SKIP
 
 =head1 Techniques for Generative Music
 
-=head4 Repetition
+Repetition
 
 =over
 
@@ -228,7 +228,7 @@ Used to create a sense of continuity and familiarity
 
 =back
 
-=head4 Variation
+Variation
 
 =over
 
@@ -238,7 +238,7 @@ Changing pitch, rhythm, or timbre of a phrase, also adding or removing elements
 
 =back
 
-=head4 Transformation
+Transformation
 
 =over
 
@@ -256,7 +256,7 @@ SKIP
 
 =head1 Techniques for Rule-Based Music
 
-=head4 Musical Grammars
+Musical Grammars
 
 =over
 
@@ -266,7 +266,7 @@ Structured sequences are created by creating a set of rules that determine which
 
 =back
 
-=head4 Constraints
+Constraints
 
 =over
 
@@ -284,7 +284,7 @@ SKIP
 
 =head1 Techniques for Statistical Music
 
-=head4 Randomness
+Randomness
 
 =over
 
@@ -294,7 +294,7 @@ Random sequences are created by randomly choosing notes from a pool of possibili
 
 =back
 
-=head4 Probability
+Probability
 
 =over
 
@@ -312,7 +312,7 @@ SKIP
 
 =head1 Techniques for Statistical Music
 
-=head4 Stochastic processes
+Stochastic processes
 
 =over
 
@@ -322,7 +322,7 @@ Described by a random probability distribution
 
 =back
 
-=head4 Evolutionary methods
+Evolutionary methods
 
 =over
 
