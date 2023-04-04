@@ -474,11 +474,11 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Here we use filthy global variables! I'll be sad if you leave now though! Anyway,
+Here we use filthy global variables! I'll be sad if you leave now though.
 
-1 Music programs are not "mission critical."
+Anyway, music programs are not "mission critical."
 
-2 They are not "time-sensitive" either. The code just creates MIDI files, rather than real-time processing.
+And they are not "time-sensitive" either. The code just creates MIDI files, rather than real-time processing.
 
 Anyway, here we show the Music::Scales module and show score settings.
 
