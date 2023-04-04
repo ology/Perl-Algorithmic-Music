@@ -154,7 +154,7 @@ Term popularized by Brian Eno to describe music that is ever-different, changing
 
 =item *
 
-Algorithms that can create different versions of music
+Algorithms that can create different versions of the same musical elements
 
 =back
 
