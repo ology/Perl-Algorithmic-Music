@@ -366,6 +366,8 @@ Other than dynamics and possibly texture, these qualities are not easily achieve
 
 This (motif) term will be important later.
 
+The concept of "development" is controversial. Some music doesn't develop phrases at all.
+
 =end note
 
 =head1 Fundamental Questions
