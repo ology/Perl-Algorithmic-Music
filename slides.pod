@@ -14,6 +14,8 @@ I will skip the deep dive into types and techniques of algorithmic music, so we 
 
 Which is the second part: Examples of actual algorithms.
 
+Also, these slides are live at the link on the bottom of each page.
+
 =end note
 
 =head1 What this talk is NOT about:
