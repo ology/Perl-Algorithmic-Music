@@ -66,7 +66,7 @@ High-level, OO MIDI score construction
 
 =item *
 
-Writing out MIDI files
+Writing MIDI files
 
 =item *
 
