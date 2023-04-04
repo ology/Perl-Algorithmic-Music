@@ -8,7 +8,7 @@ TPRC 2023 - Toronto, ON
 
 Let's talk about music!
 
-The first part will cover often overlapping concepts.
+The first part will cover often overlapping concepts - which I will whip-though.
 
 I will skip the deep dive into types and techniques of algorithmic music, so we can get to the meat of the matter:
 
