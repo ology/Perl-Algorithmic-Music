@@ -672,8 +672,8 @@ And "pfold" is another type of combinatorial pattern that can be generated.
 my $mdp = Music::Duration::Partition->new(
     size    => 4, # number of beats to render
     pool    => [qw(hn dqn qn en)],
-    weights => [    1,  1, 2, 2 ],
-    groups  => [    1,  1, 1, 2 ],
+    weights => [ 1, 1, 2, 2 ],
+    groups  => [ 1, 1, 1, 2 ],
 );
 
 my @motifs = map { $mdp->motif } 1 .. $motif_number;
