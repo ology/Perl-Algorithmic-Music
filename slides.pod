@@ -358,7 +358,7 @@ A "motif" is a brief melodic or rhythmic formula out of which longer passages ar
 
 =begin note
 
-Foo
+This (motif) term will be important later.
 
 =end note
 
@@ -386,7 +386,9 @@ How do you structure a tune?
 
 =begin note
 
-Foo
+These are the questions we will have to answer if we want to create algorithmic music that follows traditional theory.
+
+If we don't care about traditions, then anything goes!
 
 =end note
 
@@ -396,7 +398,9 @@ App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar L<MIDI::Drummer::T
 
 =begin note
 
-Foo
+This shows over 45 music construction modules on CPAN.
+
+The linked ones are those mentioned in this presentation.
 
 =end note
 
