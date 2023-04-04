@@ -1,0 +1,427 @@
+=head1 Algorithmic Music with Perl
+
+Gene Boggs (ology)
+
+TPRC 2023 - Toronto, ON
+
+=head1 What this talk is NOT about:
+
+=over
+
+=item *
+
+Song / audio analysis
+
+=item *
+
+Real-time audio / MIDI processing
+
+=item *
+
+Low-level handling of MIDI events
+
+=item *
+
+Artificial intelligence techniques
+
+=item *
+
+Kittens
+
+=back
+
+=head1 What this talk IS about:
+
+=over
+
+=item *
+
+Procedural algorithms
+
+=item *
+
+High-level MIDI score construction
+
+=item *
+
+Writing out MIDI files
+
+=item *
+
+Applied music theory
+
+=back
+
+=head1 What is Algorithmic Music?
+
+=head4 Computer-assisted composition where algorithms are used to create musical material.
+
+=over
+
+=item *
+
+For musical creations in and of themselves
+
+=item *
+
+To generate musical ideas and satisfy curiosity
+
+=item *
+
+For practice and study passages
+
+=item *
+
+To make fragments to import into a DAW ("digital audio workstation")
+
+=back
+
+=head1 What is Algorithmic Music?
+
+=over
+
+=item *
+
+Constructed with mathematical equations or grammars
+
+=item *
+
+Or randomized selection of notes, rhythms, and phrases
+
+=item *
+
+Or probabality logic
+
+=item *
+
+Or stochastic processes
+
+=item *
+
+Or rule-based methods
+
+=back
+
+=head1 Types of Algorithmic Music
+
+=head4 Generative
+
+=over
+
+=item *
+
+Term popularized by Brian Eno to describe music that is ever-different, changing, and created by a system
+
+=item *
+
+Algorithms that can create different versions of music
+
+=back
+
+=head1 Types of Algorithmic Music
+
+=head4 Rule-Based
+
+=over
+
+=item *
+
+Uses grammars to generate compositions
+
+=item *
+
+Uses constraints to restrict compositions
+
+=item *
+
+Often composed according to a predetermined set of instructions
+
+=back
+
+=head1 Types of Algorithmic Music
+
+=head4 Aleatoric and Statistical
+
+=over
+
+=item *
+
+Use of randomness to create unique, sometimes complex and unpredictable sound
+
+=item *
+
+Use of probability
+
+=item *
+
+Use of stochastic processes
+
+=back
+
+=head1 Techniques for Generative Music
+
+=head4 Repetition
+
+=over
+
+=item *
+
+Used to create a sense of continuity and familiarity
+
+=back
+
+=head4 Variation
+
+=over
+
+=item *
+
+Changing pitch, rhythm, or timbre of a phrase, also adding or removing elements
+
+=back
+
+=head4 Transformation
+
+=over
+
+=item *
+
+Manipulating small details of a composition to create new, unique pieces of music
+
+=back
+
+=head1 Techniques for Rule-Based Music
+
+=head4 Musical Grammars
+
+=over
+
+=item *
+
+Structured sequences are created by creating a set of rules that determine which rhythms, notes, or phrases are chosen
+
+=back
+
+=head4 Constraints
+
+=over
+
+=item *
+
+A constraint solver searches for solutions, where variables are bound to values of its domain without violating any constraints
+
+=back
+
+=head1 Techniques for Statistical Music
+
+=head4 Randomness
+
+=over
+
+=item *
+
+Random sequences are created by randomly choosing notes from a pool of possibilities
+
+=back
+
+=head4 Probability
+
+=over
+
+=item *
+
+By changing the probabilities of rhythms, notes, chords, or phrases, different variations of a musical sequence can be created
+
+=back
+
+=head1 Techniques for Statistical Music
+
+=head4 Stochastic processes
+
+=over
+
+=item *
+
+Described by a random probability distribution
+
+=back
+
+=head4 Evolutionary methods
+
+=over
+
+=item *
+
+Based on genetic algorithms using mutation and natural selection
+
+=back
+
+=head1 A Little Music Theory
+
+=over
+
+=item *
+
+Basic elements: rhythm, harmony, and melody
+
+=item *
+
+Compositional elements such as song form, tempo, key signatures, intervals, scales, etc.
+
+=item *
+
+Qualities such as pitch, tone, timbre, texture, dynamics, etc.
+
+=item *
+
+A "motif" is a brief melodic or rhythmic formula out of which longer passages are developed
+
+=back
+
+=head1 Questions
+
+=over
+
+=item *
+
+How do you construct a rhythm?
+
+=item *
+
+How do you generate pleasing harmony?
+
+=item *
+
+How do you make a melody?
+
+=item *
+
+How do you structure a tune?
+
+=back
+
+=head1 Music Modules on CPAN
+
+App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar MIDI::Drummer::Tiny MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont MIDI::Tools MIDI::Trans MIDI::Tweaks MIDI::Util Music::AtonalUtil Music::Cadence Music::Canon Music::ChordBot Music::Chord::Namer Music::Chord::Note Music::Chord::Positions Music::Chord::Progression Music::Chord::Progression::Transform Music::Duration Music::Duration::Partition Music::Gestalt Music::Guidonian Music::Harmonics Music::MelodicDevice::Inversion Music::MelodicDevice::Transposition Music::MelodicDevice::Ornamentation Music::NeoRiemannianTonnetz Music::Note Music::Note::Frequency Music::Note::Role::Operators Music::PitchNum Music::RecRhythm Music::RhythmSet Music::ScaleNote Music::Scales Music::Tempo Music::Tension Music::ToRoman Music::VoiceGen Music::Voss String::Approx Text::Chord::Piano (45+!)
+
+=head1 Basic Algorithms 1 of 2
+
+=begin perl
+
+use MIDI::Util qw(setup_score);
+
+my $score = setup_score();
+
+$score->synch(
+  sub { bass($score) },
+  sub { treble($score) },
+);
+
+$score->write_score("$0.mid");
+
+=end perl
+
+=head1 Basic Algorithms 2 of 2
+
+=begin perl
+
+sub bass {
+  my ($score) = @_;
+  for my $note (qw(C3 F3 G3 C4)) {
+    $score->n('hn', $note);
+  }
+}
+sub treble {
+  my ($score) = @_;
+  for my $note (qw(C4 D4 E4 F4)) {
+    $score->n('qn', $note);
+    $score->r('qn');
+  }
+}
+
+=end perl
+
+=head1 Basic Algorithms 1 of 3
+
+=begin perl
+
+use MIDI::Util qw(setup_score set_chan_patch);
+use Music::Scales qw(get_scale_MIDI);
+
+my $score = setup_score(bpm => 120, volume => 120);
+
+$score->synch(\&bass, \&treble);
+
+$score->write_score("$0.mid");
+
+=end perl
+
+=head1 Basic Algorithms 2 of 3
+
+=begin perl
+
+sub bass {
+  set_chan_patch($score, 0, 35);
+
+  my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
+
+  for my $n (1 .. 4) {
+    my $pitch = $pitches[int rand @pitches];
+    $score->n('hn', $pitch);
+  }
+}
+
+=end perl
+
+=head1 Basic Algorithms 3 of 3
+
+=begin perl
+
+sub treble {
+  set_chan_patch($score, 1, 0);
+  my @pitches = (
+    get_scale_MIDI('C', 4, 'major'),
+    get_scale_MIDI('C', 5, 'major'),
+  );
+
+  for my $n (1 .. 4) {
+    my $pitch = $pitches[int rand @pitches];
+    $score->n('qn', $pitch);
+    $score->r('qn');
+  }
+}
+
+=end perl
+
+=head1 Basic Algorithms 1 of 2
+
+=begin perl
+
+use Data::Dumper::Compact qw(ddc);
+use MIDI::Util qw(setup_score midi_format);
+use Music::Chord::Note ();
+
+my $score = setup_score();
+
+my $mcn = Music::Chord::Note->new;
+
+=end perl
+
+=head1 Basic Algorithms 2 of 2
+
+=begin perl
+
+for my $c (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
+  my @chord = $mcn->chord_with_octave($c, 4);
+
+  @chord = midi_format(@chord);
+  print ddc(\@chord);
+
+  $score->n('wn', @chord);
+}
+
+$score->write_score("$0.mid");
+
+=end perl
+
+=cut
