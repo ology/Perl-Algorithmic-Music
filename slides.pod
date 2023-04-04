@@ -623,11 +623,11 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 =begin perl
 
 my $d = MIDI::Drummer::Tiny->new(
-    file   => $self->filename,
-    bars   => 4 * $self->repeat,
-    bpm    => $self->bpm,
-    reverb => $self->reverb,
-    volume => $self->volume,
+    file   => $filename,
+    bars   => 4 * $repeat,
+    bpm    => $bpm,
+    reverb => $reverb,
+    volume => $volume,
     # etc...
 );
 
