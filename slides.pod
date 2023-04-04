@@ -673,17 +673,13 @@ Voices
 
 =head1 Links
 
-This slideshow:
+L<This slideshow|https://github.com/ology/Perl-Algorithmic-Music>
 
-At L<https://github.com/ology/Perl-Algorithmic-Music>
+L<Made with S5|http://search.cpan.org/dist/Pod::S5>
 
-L<Made with http://search.cpan.org/dist/Pod::S5>
+L<The GrooveTool|https://github.com/ology/Groove-Tool>
 
-The GrooveTool L<on github|https://github.com/ology/Groove-Tool>
-
-Algorithmic Composition Wiki:
-
-L<https://github.com/ology/MIDI-Perl-HOWTO/wiki>
+L<Algorithmic Composition Wiki|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
 
 Shameless plug: My latest album on youtube, spotify, apple music, etc., which includes the partially algorithmic tune, "Permutational" is:
 
