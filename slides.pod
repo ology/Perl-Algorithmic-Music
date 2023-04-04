@@ -596,7 +596,7 @@ Produces a randomized, figured bass part
 
 =item *
 
-Find it L<on github|https://github.com/ology/Groove-Tool>
+morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =back
 
@@ -677,7 +677,9 @@ This slideshow:
 
 At L<https://github.com/ology/Perl-Algorithmic-Music>
 
-L<Made with http://search.cpan.org/dist/Vroom>
+L<Made with http://search.cpan.org/dist/Pod::S5>
+
+The GrooveTool L<on github|https://github.com/ology/Groove-Tool>
 
 Algorithmic Composition Wiki:
 
