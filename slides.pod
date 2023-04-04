@@ -598,6 +598,9 @@ $score->write_score("$0.mid");
 
 =begin note
 
+> vim ex-08-02.pl
+:!rm %.mid ; perl % ; timidity %.mid
+
 Here is the meat of the algorithm: Play a list of named chords held for a whole note each.
 
 =end note
