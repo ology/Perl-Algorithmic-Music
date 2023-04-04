@@ -8,11 +8,9 @@ TPRC 2023 - Toronto, ON
 
 Let's talk about music!
 
-Who here is a musican of any degree or persuasion?
+The first part will cover often overlapping concepts.
 
-Who has thought about music theory?
-
-Ok! Just curious. :-)
+The second will be examples of actual algorithms.
 
 =end note
 
@@ -685,8 +683,8 @@ Algorithmic Composition Wiki:
 
 L<https://github.com/ology/MIDI-Perl-HOWTO/wiki>
 
-Shameless plug: My latest album including the partially algorithmic tune, "Permutational"
+Shameless plug: My latest album on youtube, spotify, apple music, etc., which includes the partially algorithmic tune, "Permutational" is:
 
-L<https://ology.net/XI/>
+L<https://ology.net/XI/> - Check it out!
 
 =cut
