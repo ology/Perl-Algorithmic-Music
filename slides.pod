@@ -421,7 +421,9 @@ $score->write_score("$0.mid");
 
 =begin note
 
-This slide is a complete program that shows the score and synchronization.
+The following set of slides are complete programs.
+
+This first one shows the score and synchronization.
 
 =end note
 
