@@ -124,7 +124,7 @@ Or randomized selection of notes, rhythms, and phrases
 
 =item *
 
-Or probabality logic
+Or probabality logic to determine selection
 
 =item *
 
