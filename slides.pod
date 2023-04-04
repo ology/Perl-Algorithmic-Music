@@ -600,7 +600,7 @@ Here is the meat of the algorithm: Play a list of named chords held for a whole 
 
 =item *
 
-Generates combinatorial rhythmic patterns like Euclidean or Christoffel words
+Generates combinatorial rhythmic patterns, i.e. Euclidean and Christoffel words
 
 =item *
 
