@@ -555,9 +555,9 @@ my $mcn = Music::Chord::Note->new;
 
 =begin note
 
-This slide just introduces the next one.
+This slide just introduces the next slide.
 
-But here we instantiate our new chord to note list object first.
+But we instantiate our new chord to note list object first.
 
 =end note
 
