@@ -44,7 +44,7 @@ Kittens
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -72,7 +72,7 @@ Applied music theory
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -102,7 +102,7 @@ To make fragments to import into a DAW ("digital audio workstation")
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -134,7 +134,7 @@ Or rule-based methods
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -156,7 +156,7 @@ Algorithms that can create different versions of music
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -182,7 +182,7 @@ Often composed according to a predetermined set of instructions
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -208,7 +208,7 @@ Use of stochastic processes
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -246,7 +246,7 @@ Manipulating small details of a composition to create new, unique pieces of musi
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -274,7 +274,7 @@ A constraint solver searches for solutions, where variables are bound to values 
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -302,7 +302,7 @@ By changing the probabilities of rhythms, notes, chords, or phrases, different v
 
 =begin note
 
-Foo
+...
 
 =end note
 
@@ -330,7 +330,7 @@ Based on genetic algorithms using mutation and natural selection
 
 =begin note
 
-Foo
+...
 
 =end note
 
