@@ -684,7 +684,7 @@ my @motifs = map { $mdp->motif } 1 .. $motif_number;
 
 =begin note
 
-Rhythmic phrase generator
+Phrase generator for bass rhythmic motifs
 
 =end note
 
