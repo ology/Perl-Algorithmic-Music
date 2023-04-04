@@ -539,7 +539,9 @@ my $mcn = Music::Chord::Note->new;
 
 =begin note
 
-Foo
+This slide just introduces the next one.
+
+But here we instantiate our new chord to note list object first.
 
 =end note
 
@@ -562,7 +564,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Foo
+Here is the meat of the algorithm: Play a list of named chords held for a whole note each.
 
 =end note
 
