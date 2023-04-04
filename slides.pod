@@ -556,11 +556,11 @@ Foo
 
 =item *
 
-Generate combinatorical drum patterns
+Generates combinatorical drum patterns
 
 =item *
 
-Produce a randomized, figured bass part
+Produces a randomized, figured bass part
 
 =back
 
