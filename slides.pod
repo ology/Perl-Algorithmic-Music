@@ -154,6 +154,12 @@ Algorithms that can create different versions of music
 
 =back
 
+=begin note
+
+Foo
+
+=end note
+
 =head1 Types of Algorithmic Music
 
 =head4 Rule-Based
@@ -173,6 +179,12 @@ Uses constraints to restrict compositions
 Often composed according to a predetermined set of instructions
 
 =back
+
+=begin note
+
+Foo
+
+=end note
 
 =head1 Types of Algorithmic Music
 
