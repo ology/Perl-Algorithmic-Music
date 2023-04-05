@@ -412,9 +412,9 @@ Linked modules are mentioned in this presentation.
 
 =head1 Basic Algorithms 1 of 2
 
-# Setup, synch, & write
-
 =begin perl
+
+# Setup, synch, & write
 
 use MIDI::Util qw(setup_score);
 
@@ -469,9 +469,9 @@ This is the "proper" way, in terms of CS. But...
 
 =head1 Basic Algorithms 1 of 3
 
-# With filthy globals! Also random pitches
-
 =begin perl
+
+# With filthy globals! Also random pitches
 
 use MIDI::Util qw(setup_score set_chan_patch);
 use Music::Scales qw(get_scale_MIDI);
@@ -482,6 +482,7 @@ $score->synch(
     \&bass,
     \&treble,
 ) for 1 .. 2;
+
 $score->write_score("$0.mid");
 
 =end perl
@@ -556,9 +557,9 @@ Instead of half-notes, add a quarter-note and a quarter-rest.
 
 =head1 Basic Algorithms 1 of 2
 
-# Play a list of named chords held for a whole note each:
-
 =begin perl
+
+# Play a list of named chords held for a whole note each:
 
 use Data::Dumper::Compact qw(ddc);
 use MIDI::Util qw(setup_score midi_format);
@@ -627,9 +628,9 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =head1 Instantiate a Drummer
 
-# Everything needed to add drums to a MIDI score and more:
-
 =begin perl
+
+# Everything needed to add drums to a MIDI score and more:
 
 my $d = MIDI::Drummer::Tiny->new(
     file   => $filename,
@@ -674,9 +675,9 @@ Now that I look at it, looks like I could simplify the syntax with a dispatch ta
 
 =head1 Figured Bass Part 1 of 2
 
-# Phrase generator for rhythmic motifs:
-
 =begin perl
+
+# Phrase generator for rhythmic motifs:
 
 my $mdp = Music::Duration::Partition->new(
     size    => 4, # number of beats to render
