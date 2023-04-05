@@ -576,7 +576,7 @@ my $mcn = Music::Chord::Note->new;
 
 This slide just introduces the next slide.
 
-But we instantiate our new chord to note list object first.
+But we instantiate a new chord-to-notes object first.
 
 =end note
 
