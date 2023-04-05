@@ -663,8 +663,7 @@ elsif ($part->{style} eq 'pfold') {
 
 =end perl
 
-Where the $key is a unique phrase identifier.
-And "pfold" is another type of combinatorial pattern that can be generated.
+(Where $key is a unique phrase identifier. And "pfold" is another type of pattern.)
 
 =begin note
 
