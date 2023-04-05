@@ -428,7 +428,7 @@ $score->write_score("$0.mid");
 
 The following sets of slides are complete programs.
 
-This first one shows the score and synchronization.
+1st: score and synchronization.
 
 =end note
 
@@ -457,7 +457,7 @@ sub treble {
 > vim ex-02-02.pl
 :!rm %.mid ; perl % ; timidity %.mid
 
-This slide shows the sychornized parts.
+2nd: sychornized parts.
 
 Here we use literal notes with octaves.
 
