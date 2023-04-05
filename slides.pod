@@ -159,7 +159,7 @@ Algorithms that can create different versions of the same musical elements
 
 =begin note
 
-SKIP
+Generative music is not necessarily alorithmic. For instance, Eno's Music for Airports #2 is actually a tape-loop physical system.
 
 =end note
 
