@@ -574,6 +574,8 @@ This slide just introduces the next slide...
 
 =head1 Basic Algorithms 2 of 2
 
+Play a list of named chords held for a whole note each:
+
 =begin perl
 
 for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
@@ -592,8 +594,6 @@ $score->write_score("$0.mid");
 =begin note
 
 (ex-08-02.pl)
-
-Play a list of named chords held for a whole note each.
 
 =end note
 
