@@ -516,7 +516,7 @@ sub bass {
 
 And here is the bass part.
 
-First we change to the fretless bass patch on channel zero and get the scale pitches in a non-clashing scale.
+Fretless bass patch on channel zero. Scale pitches in a non-clashing scale.
 
 Next we add four random pitches to the score, for a half-note each.
 
