@@ -18,7 +18,7 @@ if you want to follow along or reread what the hell I just said.
 
 =end note
 
-=head1 What this talk is NOT about:
+=head1 What this is NOT about:
 
 =over
 
@@ -50,7 +50,7 @@ Kittens!
 
 =end note
 
-=head1 What this talk IS about:
+=head1 What this IS about:
 
 =over
 
