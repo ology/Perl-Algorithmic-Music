@@ -532,11 +532,11 @@ Next we add four random pitches to the score, for a half-note each.
 
 sub treble {
     set_chan_patch($score, 1, 0);
+
     my @pitches = (
         get_scale_MIDI('C', 4, 'major'),
         get_scale_MIDI('C', 5, 'major'),
     );
-
     for my $n (1 .. 4) {
         my $pitch = $pitches[int rand @pitches];
         $score->n('qn', $pitch);
