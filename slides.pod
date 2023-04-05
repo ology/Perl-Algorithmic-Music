@@ -349,7 +349,7 @@ Compositional elements: song form, tempo, meter, key signatures, intervals, scal
 
 =item *
 
-Qualities such as pitch, tone, timbre, texture, dynamics, etc.
+Qualities such as tone, timbre, texture, dynamics, etc. (not easily achieved with MIDI)
 
 =item *
 
@@ -359,9 +359,7 @@ A "motif" is a brief melodic or rhythmic formula out of which longer passages ar
 
 =begin note
 
-Other than dynamics and possibly texture, these qualities are not easily achieved with MIDI.
-
-This (motif) term will be important later.
+"Motif" will be important later...
 
 The concept of "development" is controversial. Some music doesn't develop phrases at all.
 
