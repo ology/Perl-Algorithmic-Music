@@ -679,7 +679,7 @@ my $mdp = Music::Duration::Partition->new(
     groups  => [ 1, 1, 1, 2 ],
 );
 
-my @motifs = map { $mdp->motif } 1 .. $motif_number;
+my @motifs = map { $mdp->motif } 1 .. 2;
 
 =end perl
 
