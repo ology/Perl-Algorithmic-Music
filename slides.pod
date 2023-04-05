@@ -403,8 +403,6 @@ App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar L<MIDI::Drummer::T
 
 =begin note
 
-This shows over 45 music construction modules on CPAN.
-
 The linked ones are those mentioned in this presentation.
 
 =end note
