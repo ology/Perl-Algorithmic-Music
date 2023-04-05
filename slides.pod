@@ -576,8 +576,8 @@ This slide just introduces the next slide...
 
 =begin perl
 
-for my $c (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
-    my @chord = $mcn->chord_with_octave($c, 4);
+for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
+    my @chord = $mcn->chord_with_octave($named, 4);
 
     @chord = midi_format(@chord);
     print ddc(\@chord); # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
