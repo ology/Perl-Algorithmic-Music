@@ -97,7 +97,7 @@ For practice and study, with etudes and rhythms (i.e. a better metronome)
 
 =item *
 
-To make fragments to import into a larger context - possibly with a "digital audio workstation" (DAW)
+To import fragments into a larger context - possibly with a "digital audio workstation" (DAW)
 
 =back
 
