@@ -570,9 +570,9 @@ my $mcn = Music::Chord::Note->new;
 
 =begin note
 
-This slide just introduces the next slide.
+This slide just introduces the next slide...
 
-But we instantiate a new chord-to-notes object first.
+1st: Instantiate a new chord-to-notes object.
 
 =end note
 
@@ -598,7 +598,7 @@ $score->write_score("$0.mid");
 > vim ex-08-02.pl
 :!rm %.mid ; perl % ; timidity %.mid
 
-Here is the meat of the algorithm: Play a list of named chords held for a whole note each.
+Play a list of named chords held for a whole note each.
 
 =end note
 
