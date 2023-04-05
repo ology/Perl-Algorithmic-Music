@@ -554,7 +554,7 @@ sub treble {
 
 The treble uses a scale of two octaves, as opposed to one of the bass routine.
 
-And instead of half-notes, we add a quarter pitched note and a quarter-note rest.
+And instead of half-notes, we add a quarter-note and a quarter-rest.
 
 =end note
 
