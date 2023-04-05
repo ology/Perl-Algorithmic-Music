@@ -67,7 +67,7 @@ Writing MIDI files
 
 =item *
 
-Applied music theory (i.e. algorithmic music "exercises" a theory)
+Applied music theory (i.e. algorithmic music can "exercise" a theory)
 
 =back
 
