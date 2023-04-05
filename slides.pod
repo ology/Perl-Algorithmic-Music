@@ -628,7 +628,7 @@ Combinatorial patterns are "juxtaposed" making beats!
 
 =head1 Instantiate a Drummer
 
-Everything needed to add drums to a MIDI score and more
+Everything needed to add drums to a MIDI score and more:
 
 =begin perl
 
