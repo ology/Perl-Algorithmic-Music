@@ -622,11 +622,13 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =begin note
 
-...
+Combinatorial patterns are "juxtaposed" making beats!
 
 =end note
 
 =head1 Instantiate a Drummer
+
+Everything needed to add drums to a MIDI score and more
 
 =begin perl
 
@@ -641,11 +643,7 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =end perl
 
-=begin note
-
-Everything you need to add drums to a MIDI score and more.
-
-For the GrooveTool, combinatorial patterns are "juxtaposed" - i.e. beats!
+...
 
 =end note
 
