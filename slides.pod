@@ -2,6 +2,8 @@
 
 L<Gene Boggs (ology)|https://github.com/ology>
 
+G<https://ology.net/dev/Perl-Algorithmic-Music/flowchart.png>
+
 TPRC 2023 - Toronto, ON
 
 =begin note
@@ -94,7 +96,7 @@ To generate musical ideas and satisfy curiosity
 
 =item *
 
-For practice and study, with etudes and rhythms (i.e. a better metronome)
+For practice and study, with etudes and rhythms (that are better than a metronome)
 
 =item *
 
