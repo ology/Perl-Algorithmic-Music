@@ -103,7 +103,7 @@ To import fragments into a larger context - possibly with a "digital audio works
 
 =begin note
 
-Like Reaper, Ableton, or Apple Logic, etc.
+DAWs like Reaper, Ableton, or Apple Logic, etc.
 
 =end note
 
