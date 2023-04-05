@@ -643,6 +643,8 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =end perl
 
+=begin note
+
 ...
 
 =end note
