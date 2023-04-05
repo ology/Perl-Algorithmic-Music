@@ -56,11 +56,7 @@ Kittens!
 
 =item *
 
-Procedural algorithms
-
-=item *
-
-High-level, OO MIDI score construction
+Applied music theory (i.e. algorithmic music can "exercise" a theory)
 
 =item *
 
@@ -68,7 +64,11 @@ Writing MIDI files
 
 =item *
 
-Applied music theory (i.e. algorithmic music can "exercise" a theory)
+High-level, OO MIDI score construction
+
+=item *
+
+Procedural algorithms
 
 =back
 
