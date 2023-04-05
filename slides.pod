@@ -393,6 +393,8 @@ These are the questions we will have to answer if we want to create algorithmic 
 
 If we don't care about traditions, then anything goes!
 
+There are as many answers as there are musicians.
+
 =end note
 
 =head1 Music Construction Modules on CPAN
