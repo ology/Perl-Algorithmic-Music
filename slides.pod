@@ -454,7 +454,7 @@ sub treble {
 
 =begin note
 
-> vim ex-02-02.pl
+(ex-02-02.pl)
 
 Literal notes with octaves.
 
@@ -542,7 +542,7 @@ sub treble {
 
 =begin note
 
-> vim ex-04-03.pl
+(ex-04-03.pl)
 
 Treble uses two octaves, as opposed to the bass part's one.
 
@@ -591,7 +591,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-> vim ex-08-02.pl
+(ex-08-02.pl)
 
 Play a list of named chords held for a whole note each.
 
