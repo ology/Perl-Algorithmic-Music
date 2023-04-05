@@ -10,7 +10,7 @@ Let's talk about music!
 
 The first part will cover often overlapping concepts - which I will whip-though.
 
-I will skip the deep dive into types and techniques of algorithmic music,
+Then I will skip the deep dive into types and techniques of algorithmic music,
 so we can get to the meat of the second part: examples of actual algorithms.
 
 Also, these slides are live at the link on the bottom of the pages.
