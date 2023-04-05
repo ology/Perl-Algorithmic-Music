@@ -456,11 +456,9 @@ sub treble {
 
 > vim ex-02-02.pl
 
-2nd: sychornized parts.
+Literal notes with octaves.
 
-Here we use literal notes with octaves.
-
-Also this is the "proper" way to do things, in terms of CS. But...
+This is the "proper" way, in terms of CS. But...
 
 =end note
 
