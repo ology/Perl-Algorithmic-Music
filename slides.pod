@@ -151,13 +151,13 @@ Term popularized by Brian Eno to describe music that is ever-different, changing
 
 =item *
 
-Algorithms that can create different versions of the same musical elements
+Generative music is not necessarily alorithmic. For instance, Eno's Music for Airports #2 is actually a physical tape-loop system.
 
 =back
 
 =begin note
 
-Generative music is not necessarily alorithmic. For instance, Eno's Music for Airports #2 is actually a tape-loop physical system.
+...
 
 =end note
 
