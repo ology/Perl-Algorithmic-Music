@@ -31,23 +31,21 @@ Real-time audio / MIDI processing
 
 =item *
 
-Low-level handling of MIDI events
+Low-level handling of MIDI events (e.g. note_on, note_off, sysex)
 
 =item *
 
-Artificial intelligence techniques
+Artificial intelligence techniques (e.g. generative adversarial networks)
 
 =item *
 
-Kittens
+Kittens!
 
 =back
 
 =begin note
 
-Events like note_on, note_off, sysex, etc.
-
-AI such as generative adversarial networks, etc.
+...
 
 =end note
 
