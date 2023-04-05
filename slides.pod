@@ -619,7 +619,7 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =begin note
 
-Combinatorial patterns are "juxtaposed" making beats!
+...
 
 =end note
 
