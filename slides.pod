@@ -403,7 +403,7 @@ App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar L<MIDI::Drummer::T
 
 =begin note
 
-The linked ones are those mentioned in this presentation.
+The linked modules are those mentioned in this presentation.
 
 =end note
 
