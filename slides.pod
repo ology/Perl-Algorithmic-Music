@@ -711,7 +711,7 @@ my @notes2 = map { $voice->rand } $motifs[1]->@*;
 
 =begin note
 
-Voices with the excellent Music::VoiceGen module by Jeremy Mates (AKA thrig)
+Excellent Music::VoiceGen module by Jeremy Mates (AKA thrig)
 
 =end note
 
