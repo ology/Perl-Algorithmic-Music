@@ -577,7 +577,7 @@ This slide just introduces the next slide...
 
 =head1 Basic Algorithms 2 of 2
 
-Play a list of named chords held for a whole note each:
+# Play a list of named chords held for a whole note each:
 
 =begin perl
 
@@ -626,7 +626,7 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =head1 Instantiate a Drummer
 
-Everything needed to add drums to a MIDI score and more:
+# Everything needed to add drums to a MIDI score and more:
 
 =begin perl
 
@@ -673,7 +673,7 @@ Now that I look at it, looks like I could simplify the syntax with a dispatch ta
 
 =head1 Figured Bass Part 1 of 2
 
-Phrase generator for rhythmic motifs:
+# Phrase generator for rhythmic motifs:
 
 =begin perl
 
