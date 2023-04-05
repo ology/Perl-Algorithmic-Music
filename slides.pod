@@ -555,6 +555,8 @@ Instead of half-notes, add a quarter-note and a quarter-rest.
 
 =head1 Basic Algorithms 1 of 2
 
+# Play a list of named chords held for a whole note each:
+
 =begin perl
 
 use Data::Dumper::Compact qw(ddc);
@@ -576,8 +578,6 @@ This slide just introduces the next slide...
 =end note
 
 =head1 Basic Algorithms 2 of 2
-
-# Play a list of named chords held for a whole note each:
 
 =begin perl
 
