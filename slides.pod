@@ -667,7 +667,7 @@ elsif ($part->{style} eq 'pfold') {
 
 =begin note
 
-Now that I look at it, looks like I could simplify the syntax with a dispatch table
+Now that I look at it, looks like I could simplify the syntax with a dispatch table.
 
 =end note
 
