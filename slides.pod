@@ -595,6 +595,9 @@ for my $c (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
 
 $score->write_score("$0.mid");
 
+__END__
+1st chord: [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
+
 =end perl
 
 =begin note
