@@ -12,11 +12,9 @@ Let's talk about music!
 
 The first part will cover sometimes overlapping concepts - which I will whip-though.
 
-Then I will skip the concepts & descriptions of the types and techniques,
-so we can get to the meat of the presentation: actual algorithms.
+Then I will skip the concepts & descriptions of the types and techniques, so we can get to the meat of the presentation: actual algorithms.
 
-Also, these slides are live at the link on the bottom of the pages,
-if you want to follow along or reread what the hell I just said.
+Also, these slides are live at the link on the bottom of the pages, if you want to follow along or reread what the hell I just said.
 
 =end note
 
@@ -518,9 +516,7 @@ sub bass {
 
 And here is the bass part.
 
-2nd: Fretless bass patch on channel zero.
-Scale pitches in a non-clashing scale.
-Add four random pitches to the score, for a half-note each.
+2nd: Fretless bass patch on channel zero. Scale pitches in a non-clashing scale. Add four random pitches to the score, for a half-note each.
 
 =end note
 
