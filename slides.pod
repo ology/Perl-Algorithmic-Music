@@ -14,7 +14,7 @@ The first part will cover sometimes overlapping concepts - which I will whip-tho
 
 Then I will skip the concepts & descriptions of the types and techniques, so we can get to the meat of the presentation: actual algorithms.
 
-Also, these slides are live at the link on the bottom of the pages, if you want to follow along or reread what the hell I just said.
+Also, these slides are live at the link on the bottom of the pages, if you want to follow along or reread what I just said.
 
 =end note
 
