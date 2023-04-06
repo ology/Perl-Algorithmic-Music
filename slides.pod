@@ -154,7 +154,7 @@ Term popularized by Brian Eno to describe music that is ever-different, changing
 
 =item *
 
-For him, generative music is often "analog algorithmic." His Music for Airports #2 is actually a physical system of tape-loops.
+For him, this is "analog algorithmic." For instance, his Music for Airports #2 is actually a physical system of 7 tape-loops.
 
 =back
 
