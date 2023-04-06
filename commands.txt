@@ -1,5 +1,0 @@
-From vim:
-
-:!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON"
-
-:!rm %.mid ; perl % ; timidity %.mid
