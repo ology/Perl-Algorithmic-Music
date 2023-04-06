@@ -82,7 +82,7 @@ Good ol' procedural algorithms
 
 =head1 What is Algorithmic Music?
 
-Computer-assisted composition where algorithms are used to create musical material.
+"Computer-assisted composition where algorithms are used to create musical material."
 
 =over
 
