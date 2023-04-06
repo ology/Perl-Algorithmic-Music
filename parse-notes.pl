@@ -29,7 +29,7 @@ for my $line (@lines) {
     if ($line =~ /^=head1 (.+)$/) {
         $i++;
         my $title = $1;
-        print "<p>$i. $title</p>\n";
+        print "<p><b>$i.</b> $title</p>\n";
     }
     elsif ($line =~ /^=begin note$/) {
         $note_flag++;
