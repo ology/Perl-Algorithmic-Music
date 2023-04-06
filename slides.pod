@@ -128,7 +128,7 @@ Or probabality logic to determine selection
 
 =item *
 
-Or stochastic processes
+Or with stochastic processes
 
 =item *
 
