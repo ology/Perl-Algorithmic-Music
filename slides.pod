@@ -116,7 +116,7 @@ DAWs like Reaper, Ableton, or Apple Logic, etc.
 
 =item *
 
-Constructed with mathematical equations or grammars
+Can be constructed with mathematical equations or grammars
 
 =item *
 
