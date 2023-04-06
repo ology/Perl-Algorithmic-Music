@@ -4,6 +4,11 @@ Secure lock settings
 
 From vim:
 
+> vit parse-notes.pl
+:!perl % slides.pod > notes.html
+
+> vit slides.pod
 :!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
 
+> vit ex-02-02.pl ex-04-03.pl ex-08-02.pl
 :!rm %.mid ; perl % ; timidity %.mid
