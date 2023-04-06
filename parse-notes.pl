@@ -41,7 +41,7 @@ for my $line (@lines) {
     }
     elsif ($note_flag && $line && $line !~ /^\.\.\./) {
 #        print "$line\n";
-        print "<p>$line</p>\n";
+        print "<p><b>$line</b></p>\n";
     }
 }
 
