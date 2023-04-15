@@ -1,6 +1,7 @@
 Phone:
 
-Secure lock settings
+Set locktime to 30 min. Search settings for:
+  Secure lock settings
 
 From vim:
 
