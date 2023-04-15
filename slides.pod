@@ -12,7 +12,7 @@ Let's talk about music!
 
 The first part will cover a few concepts, which I will whip-though.
 
-Then I will skip the concepts & descriptions of the types and techniques, so we can get to the meat of the presentation: actual algorithms.
+Then I will skip the descriptions of types and techniques, so we can get to the meat of the presentation: actual algorithms.
 
 Also, these slides are live at the link on the bottom of the pages, if you want to follow along or reread what I just said.
 
