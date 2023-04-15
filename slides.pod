@@ -10,7 +10,7 @@ TPRC 2023 - Toronto, ON
 
 Let's talk about music!
 
-The first part will cover sometimes overlapping concepts - which I will whip-though.
+The first part will cover a few concepts, which I will whip-though.
 
 Then I will skip the concepts & descriptions of the types and techniques, so we can get to the meat of the presentation: actual algorithms.
 
