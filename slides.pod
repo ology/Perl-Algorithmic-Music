@@ -398,13 +398,13 @@ There are as many answers as there are musicians.
 
 =end note
 
-=head1 CPAN Music Construction Modules
+=head1 Task::MusicBundle Modules
 
 App::MusicTools Csound Guitar::Scale MIDI MIDI::Chord::Guitar L<MIDI::Drummer::Tiny|https://metacpan.org/dist/MIDI-Drummer-Tiny> MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont MIDI::Tools MIDI::Trans MIDI::Tweaks L<MIDI::Util|https://metacpan.org/dist/MIDI-Util> Music::AtonalUtil Music::Cadence Music::Canon Music::ChordBot Music::Chord::Namer L<Music::Chord::Note|https://metacpan.org/dist/Music-Chord-Note> Music::Chord::Positions Music::Chord::Progression Music::Chord::Progression::Transform Music::Duration L<Music::Duration::Partition|https://metacpan.org/dist/Music-Duration-Partition> Music::Gestalt Music::Guidonian Music::Harmonics Music::MelodicDevice::Inversion Music::MelodicDevice::Transposition Music::MelodicDevice::Ornamentation Music::NeoRiemannianTonnetz Music::Note Music::Note::Frequency Music::Note::Role::Operators Music::PitchNum Music::RecRhythm Music::RhythmSet Music::ScaleNote L<Music::Scales|https://metacpan.org/dist/Music-Scales> Music::Tempo Music::Tension Music::ToRoman Music::VoiceGen Music::Voss String::Approx Text::Chord::Piano = B<45+!>
 
 =begin note
 
-Linked modules are mentioned in this presentation.
+Linked music construction modules are those mentioned in this presentation.
 
 =end note
 
