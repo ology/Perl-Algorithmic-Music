@@ -42,6 +42,12 @@ Artificial intelligence techniques (e.g. generative adversarial networks)
 
 Kittens!
 
+=begin html
+ 
+<img src="https://placekitten.com/200/200">
+ 
+=end html
+
 =back
 
 =begin note
