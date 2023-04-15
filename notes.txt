@@ -16,3 +16,9 @@ From vim:
 
 > vit ex-02-02.pl ex-04-03.pl ex-08-02.pl
 :!rm %.mid ; perl % ; timidity %.mid
+
+Or:
+
+> perl parse-notes.pl slides.pod > notes.html
+
+> pod2s5 slides.pod --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
