@@ -1,7 +1,10 @@
 Phone:
 
 Set locktime to 30 min. Search settings for:
-  Secure lock settings
+  Lock screen ...
+    Secure lock settings
+      Auto lock when screen turns off
+        30 minutes
 
 From vim:
 
