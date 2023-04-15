@@ -4,7 +4,7 @@ L<Gene Boggs|https://github.com/ology>
 
 G<https://ology.net/dev/Perl-Algorithmic-Music/flowchart.png>
 
-TPRC 2023 - Toronto, ON
+TPRC 2023 • Toronto, ON
 
 =begin note
 
