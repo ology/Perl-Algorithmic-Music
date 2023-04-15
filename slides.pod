@@ -346,7 +346,7 @@ Basic elements: rhythm, harmony, and melody
 
 =item *
 
-Compositional elements: song form, tempo, meter, key signatures, intervals, scales, etc.
+Compositional elements: song form, tempo, key signatures, meter, intervals, scales, etc.
 
 =item *
 
