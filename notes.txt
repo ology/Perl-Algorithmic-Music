@@ -9,7 +9,7 @@ Set locktime to 30 min. Search settings for:
 From vim:
 
 > vit parse-notes.pl
-:!perl % slides.pod > notes.html
+:!perl % slides.pod > slides/notes.html
 
 > vit slides.pod
 :!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
@@ -19,6 +19,6 @@ From vim:
 
 Or:
 
-> perl parse-notes.pl slides.pod > notes.html
+> perl parse-notes.pl slides.pod > slides/notes.html
 
 > pod2s5 slides.pod --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
