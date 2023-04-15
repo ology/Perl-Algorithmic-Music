@@ -730,6 +730,6 @@ L<Jazz-Tool|https://github.com/ology/Jazz-Tool> on GitHub
 My experiments with MIDI-Perl L<on GitHub|https://github.com/ology/Music/>
 
 Shameless plug: My L<latest album "XI"|https://ology.net/XI/> is on youtube, spotify, apple music, etc.,
-and includes the partially algorithmic tune, "Permutational." Check it out!
+and includes the partially algorithmic tune "Permutational" - Check it out!
 
 =cut
