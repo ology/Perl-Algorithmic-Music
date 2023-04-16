@@ -10,11 +10,9 @@ TPRC 2023 - Toronto, ON
 
 Let's talk about music!
 
-The first part will cover a few concepts, which I will whip-though.
+The first part will cover some concepts, which I will try to whip-though, so we can get to the algorithms.
 
-Then I will skip the descriptions of types and techniques, so we can get to the meat of the presentation: actual algorithms.
-
-Also, these slides are live at the link on the bottom of the pages, if you want to follow along or reread what just happened.
+These slides are live at the link on the bottom of the pages, if you want to follow along or reread what just happened.
 
 =end note
 
@@ -40,7 +38,7 @@ Artificial intelligence techniques (e.g. generative adversarial networks)
 
 =item *
 
-Kittens!
+Kittens! Sorry!
 
 =back
 
@@ -131,202 +129,6 @@ Or with stochastic processes
 =item *
 
 Or rule-based methods
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Types of Algorithmic Music
-
-"Generative"
-
-=over
-
-=item *
-
-Term popularized by Brian Eno to describe music that is ever-different, changing, and created by a system
-
-=item *
-
-For him, this is "analog algorithmic." For instance, his Music for Airports #2 is actually a physical system of 7 tape-loops.
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Types of Algorithmic Music
-
-Rule-Based
-
-=over
-
-=item *
-
-Uses grammars to generate compositions
-
-=item *
-
-Uses constraints to restrict compositions
-
-=item *
-
-Often composed according to a predetermined set of instructions
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Types of Algorithmic Music
-
-Aleatoric and Statistical
-
-=over
-
-=item *
-
-Use of randomness to create unique, sometimes complex and unpredictable sound
-
-=item *
-
-Use of probability
-
-=item *
-
-Use of stochastic processes
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Techniques for Generative Music
-
-Repetition
-
-=over
-
-=item *
-
-Used to create a sense of continuity and familiarity
-
-=back
-
-Variation
-
-=over
-
-=item *
-
-Changing pitch, rhythm, or timbre of a phrase, also adding or removing elements
-
-=back
-
-Transformation
-
-=over
-
-=item *
-
-Manipulating small details of a composition to create new, unique pieces of music
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Techniques for Rule-Based Music
-
-Musical Grammars
-
-=over
-
-=item *
-
-Structured sequences are created by creating a set of rules that determine which rhythms, notes, or phrases are chosen
-
-=back
-
-Constraints
-
-=over
-
-=item *
-
-A constraint solver searches for solutions, where variables are bound to values of its domain without violating any constraints
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Techniques for Statistical Music
-
-Randomness
-
-=over
-
-=item *
-
-Random sequences are created by randomly choosing notes from a pool of possibilities
-
-=back
-
-Probability
-
-=over
-
-=item *
-
-By changing the probabilities of rhythms, notes, chords, or phrases, different variations of a musical sequence can be created
-
-=back
-
-=begin note
-
-...
-
-=end note
-
-=head1 Techniques for Statistical Music
-
-Stochastic processes
-
-=over
-
-=item *
-
-Described by a random probability distribution
-
-=back
-
-Evolutionary methods
-
-=over
-
-=item *
-
-Based on genetic algorithms using mutation and natural selection
 
 =back
 
