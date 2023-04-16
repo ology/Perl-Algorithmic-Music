@@ -301,7 +301,9 @@ They are not "time-sensitive." Not "real-time."
 
 =begin perl
 
-sub bass { my ($score) = @_;
+sub bass {
+    my ($score) = @_;
+
     set_chan_patch($score, 0, 35);
 
     my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
