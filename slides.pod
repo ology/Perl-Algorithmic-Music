@@ -243,13 +243,13 @@ Following slides show complete programs.
 
 sub bass {
     my ($score) = @_;
-    for my $note (qw(C3 F3 G3 C4)) {
-        $score->n('hn', $note);
+    for my $note (qw(E2 G2 C3 E4)) {
+        $score->n('wn', $note);
     }
 }
 sub treble {
     my ($score) = @_;
-    for my $note (qw(C4 D4 E4 F4)) {
+    for my $note (qw(E4 E4 F4 G4  G4 F4 E4 D4  C4 C4 D4 E4  E4 D4 D4)) {
         $score->n('qn', $note);
         $score->r('qn');
     }
@@ -260,10 +260,6 @@ sub treble {
 =begin note
 
 (ex-02-02.pl)
-
-Literal notes with octaves.
-
-This is the "proper" way, in terms of CS. But...
 
 =end note
 
