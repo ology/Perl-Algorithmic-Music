@@ -112,7 +112,7 @@ DAWs like Reaper, Ableton, or Apple Logic, etc.
 
 =item *
 
-Can be constructed with mathematical equations or grammars
+Constructed with mathematical equations or grammars
 
 =item *
 
@@ -120,7 +120,7 @@ Or randomized selection of notes, rhythms, and phrases
 
 =item *
 
-Or probabality logic to determine selection
+Or probabality logic to determine the selection
 
 =item *
 
@@ -279,8 +279,8 @@ use Music::Scales qw(get_scale_MIDI);
 my $score = setup_score(bpm => 120, volume => 120);
 
 $score->synch(
-    \&bass,
-    \&treble,
+    sub { bass($score) },
+    sub { treble($score) },
 ) for 1 .. 2;
 
 $score->write_score("$0.mid");
@@ -301,7 +301,7 @@ They are not "time-sensitive." Not "real-time."
 
 =begin perl
 
-sub bass {
+sub bass { my ($score) = @_;
     set_chan_patch($score, 0, 35);
 
     my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
@@ -326,7 +326,7 @@ And here is the bass part.
 
 =begin perl
 
-sub treble {
+sub treble { my ($score) = @_;
     set_chan_patch($score, 1, 0);
 
     my @pitches = (
