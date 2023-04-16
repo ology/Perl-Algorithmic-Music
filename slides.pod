@@ -259,7 +259,7 @@ sub treble {
 
 =begin note
 
-(ex-02-02.pl)
+(~/sandbox/Music/ode-to-joy-slide.pl)
 
 =end note
 
