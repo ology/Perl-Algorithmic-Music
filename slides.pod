@@ -243,7 +243,7 @@ Following slides show complete programs.
 
 sub bass {
     my ($score) = @_;
-    for my $note (qw(E2 G2 C3 E4)) {
+    for my $note (qw(C3 E3 G3 C4)) {
         $score->n('hn', $note);
     }
 }
