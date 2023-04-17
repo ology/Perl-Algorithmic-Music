@@ -228,7 +228,7 @@ Linked music construction modules are those mentioned in this presentation.
 
 use MIDI::Util qw(setup_score);
 
-my $score = setup_score();
+my $score = setup_score(); # default volume, bpm, etc
 
 $score->synch(
     sub { bass($score) },
