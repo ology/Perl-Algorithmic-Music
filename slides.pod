@@ -130,6 +130,10 @@ Or with stochastic processes
 
 Or rule-based methods
 
+=item *
+
+etc!
+
 =back
 
 =begin note
