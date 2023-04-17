@@ -160,7 +160,7 @@ Qualities such as tone, timbre, texture, dynamics, etc. (not easily achieved wit
 
 =item *
 
-A "motif" is a brief melodic or rhythmic formula out of which longer passages are developed
+"A motif is a brief melodic or rhythmic formula out of which longer passages are developed"
 
 =back
 
