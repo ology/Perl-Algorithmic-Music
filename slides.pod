@@ -38,7 +38,7 @@ Artificial intelligence techniques (e.g. generative adversarial networks)
 
 =item *
 
-Kittens! Sorry!
+Kittens!
 
 =back
 
@@ -47,6 +47,14 @@ Kittens! Sorry!
 ...
 
 =end note
+
+=head1 Sorry!
+
+=begin html
+
+<img src="https://placekitten.com/400/400">
+
+=end html
 
 =head1 What this IS about
 
