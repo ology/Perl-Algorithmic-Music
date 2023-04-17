@@ -368,8 +368,6 @@ my $mcn = Music::Chord::Note->new;
 
 =begin note
 
-This slide just introduces the next slide...
-
 1st: Instantiate a new chord-to-notes object.
 
 =end note
@@ -382,7 +380,7 @@ for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
     my @chord = $mcn->chord_with_octave($named, 4);
 
     @chord = midi_format(@chord);
-    print ddc(\@chord); # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
+    print ddc(\@chord);  # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
 
     $score->n('wn', @chord);
 }
@@ -428,11 +426,11 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 # Everything needed to add drums to a MIDI score and more:
 
 my $d = MIDI::Drummer::Tiny->new(
-    file   => $filename,
-    bars   => 4 * $repeat,
-    bpm    => $bpm,
-    reverb => $reverb,
-    volume => $volume,
+    file   => $self->filename,
+    bars   => 4 * $self->repeat,
+    bpm    => $self->bpm,
+    reverb => $self->reverb,
+    volume => $self->volume,
     # etc...
 );
 
@@ -510,7 +508,7 @@ my @notes2 = map { $voice->rand } $motifs[1]->@*;
 
 =begin note
 
-Excellent Music::VoiceGen module by Jeremy Mates (AKA thrig)
+Excellent Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
 
 =end note
 
