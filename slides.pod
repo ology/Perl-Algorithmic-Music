@@ -175,7 +175,7 @@ sub treble {
 
 =begin note
 
-(~/sandbox/Music/ode-to-joy-slide.pl)
+(code-ode-to-joy-slide.pl)
 
 =end note
 
@@ -200,11 +200,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Music programs are not "mission critical."
-
-They are not "time-sensitive." Not "real-time."
-
-1st: Music::Scales and score settings.
+Music::Scales and score settings.
 
 =end note
 
@@ -229,9 +225,7 @@ sub bass {
 
 =begin note
 
-And here is the bass part.
-
-2nd: Fretless bass patch on channel zero. Scale pitches in a non-clashing scale. Add four random pitches to the score, for a half-note each.
+Fretless bass patch on channel zero. Scale pitches in a non-clashing scale. Add random pitches to the score.
 
 =end note
 
@@ -257,11 +251,9 @@ sub treble {
 
 =begin note
 
-(ex-04-03.pl)
+(code-ex-04-03.pl)
 
 Treble uses two octaves, as opposed to the bass part's one.
-
-Instead of half-notes, add a quarter-note and a quarter-rest.
 
 =end note
 
@@ -338,7 +330,7 @@ sub treble {
 
 =begin note
 
-(?.pl)
+(code-chord-slide.pl)
 
 =end note
 
