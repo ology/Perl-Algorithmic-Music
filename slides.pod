@@ -266,7 +266,7 @@ Instead of half-notes, add a quarter-note and a quarter-rest.
 
 =end note
 
-=head1 Basic Algorithms 1 of 2
+=head1 Basic Algorithms 1 of 3
 
 =begin perl
 
@@ -278,36 +278,65 @@ use Music::Chord::Note ();
 
 my $score = setup_score();
 
-my $mcn = Music::Chord::Note->new;
+$score->synch(
+    sub { chords($score) },
+    sub { treble($score) },
+) for 1 .. 2;
 
 =end perl
 
 =begin note
 
-1st: Instantiate a new chord-to-notes object.
+...
 
 =end note
 
-=head1 Basic Algorithms 2 of 2
+=head1 Basic Algorithms 2 of 3
 
 =begin perl
 
-for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
-    my @chord = $mcn->chord_with_octave($named, 4);
-
-    @chord = midi_format(@chord);
-    print ddc(\@chord);  # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
-
-    $score->n('wn', @chord);
+sub chords {
+    my ($score) = @_;
+    my $mcn = Music::Chord::Note->new;
+    for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm Cm7)) {
+        my @chord = $mcn->chord_with_octave($named, 4);
+        @chord = midi_format(@chord);
+        print ddc(\@chord);  # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
+        $score->n('wn', @chord);
+    }
 }
-
-$score->write_score("$0.mid");
 
 =end perl
 
 =begin note
 
-(ex-08-02.pl)
+...
+
+=end note
+
+=head1 Basic Algorithms 3 of 3
+
+=begin perl
+
+sub treble {
+    my ($score) = @_;
+    set_chan_patch($score, 1, 0);
+    my @pitches = (
+        get_scale_MIDI('C', 4, 'major'),
+        get_scale_MIDI('C', 5, 'major'),
+    );
+    for my $n (1 .. 4) {
+        my $pitch = $pitches[int rand @pitches];
+        $score->n('qn', $pitch);
+        $score->r('qn');
+    }
+}
+
+=end perl
+
+=begin note
+
+(?.pl)
 
 =end note
 
