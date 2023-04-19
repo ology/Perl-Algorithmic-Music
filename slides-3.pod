@@ -1,0 +1,542 @@
+=head1 Algorithmic Music with Perl
+
+L<Gene Boggs|https://github.com/ology>
+
+G<https://ology.net/dev/Perl-Algorithmic-Music/flowchart.png>
+
+TPRC 2023 - Toronto, ON
+
+=begin note
+
+Let's talk about music!
+
+The first part will cover some concepts, which I will try to whip-though, so we can get to the algorithms.
+
+These slides are live at the link on the bottom of the pages, if you want to follow along or reread what just happened.
+
+=end note
+
+=head1 What this is NOT about
+
+=over
+
+=item *
+
+Song / audio analysis
+
+=item *
+
+Real-time audio / MIDI processing
+
+=item *
+
+Low-level handling of MIDI events (e.g. note_on, note_off, sysex)
+
+=item *
+
+Artificial intelligence techniques (e.g. generative adversarial networks)
+
+=item *
+
+Kittens!
+
+=back
+
+=begin note
+
+...
+
+=end note
+
+=head1 Sorry!
+
+=begin html
+
+<img src="https://placekitten.com/400/400">
+
+=end html
+
+=head1 What this IS about
+
+=over
+
+=item *
+
+Applied music theory (i.e. algorithmic music can "exercise" a theory)
+
+=item *
+
+Writing MIDI files
+
+=item *
+
+High-level, OO MIDI score construction
+
+=item *
+
+Good ol' procedural algorithms
+
+=back
+
+=begin note
+
+...
+
+=end note
+
+=head1 What is Algorithmic Music?
+
+"Computer-assisted composition where algorithms are used to create musical material."
+
+=over
+
+=item *
+
+For musical creations in and of themselves
+
+=item *
+
+To generate musical ideas and satisfy curiosity
+
+=item *
+
+For practice and study, with etudes and rhythms (that are better than a metronome)
+
+=item *
+
+To import fragments into a larger context - possibly with a digital audio workstation ("DAW")
+
+=back
+
+=begin note
+
+DAWs like Reaper, Ableton, or Apple Logic, etc.
+
+=end note
+
+=head1 What is Algorithmic Music?
+
+=over
+
+=item *
+
+Constructed with mathematical equations or grammars
+
+=item *
+
+Or randomized selection of notes, rhythms, and phrases
+
+=item *
+
+Or probabality logic to determine the selection
+
+=item *
+
+Or with stochastic processes
+
+=item *
+
+Or rule-based methods
+
+=item *
+
+etc!
+
+=back
+
+=begin note
+
+...
+
+=end note
+
+=head1 A Little Music Theory
+
+=over
+
+=item *
+
+Basic elements: rhythm, harmony, and melody
+
+=item *
+
+Compositional elements: song form, tempo, key signatures, meter, intervals, scales, etc.
+
+=item *
+
+Qualities such as tone, timbre, texture, dynamics, etc. (not easily achieved with MIDI)
+
+=item *
+
+"A motif is a brief melodic or rhythmic formula out of which longer passages are developed" - More later!
+
+=back
+
+=begin note
+
+The concept of "development" is controversial. Some music doesn't develop phrases at all. Eno? Primus guitar solos?
+
+=end note
+
+=head1 Fundamental Questions
+
+=over
+
+=item *
+
+How do you construct a rhythm?
+
+=item *
+
+How do you generate pleasing harmony?
+
+=item *
+
+How do you make a melody?
+
+=item *
+
+How do you structure a tune?
+
+=back
+
+=begin note
+
+These are the questions we will have to answer if we want to create algorithmic music that follows traditional theory.
+
+If we don't care about traditions, then anything goes!
+
+There are as many answers as there are musicians.
+
+=end note
+
+=head1 Task::MusicBundle Modules
+
+App::MusicTools Csound Guitar::Scale MIDI MIDI::Bassline::Walk MIDI::Chord::Guitar L<MIDI::Drummer::Tiny|https://metacpan.org/dist/MIDI-Drummer-Tiny> MIDI::Morph MIDI::Pitch MIDI::Praxis::Variation MIDI::Simple::Drummer MIDI::SoundFont MIDI::Tools MIDI::Trans MIDI::Tweaks L<MIDI::Util|https://metacpan.org/dist/MIDI-Util> Music::AtonalUtil Music::Cadence Music::Canon Music::ChordBot Music::Chord::Namer L<Music::Chord::Note|https://metacpan.org/dist/Music-Chord-Note> Music::Chord::Positions Music::Chord::Progression Music::Chord::Progression::Transform Music::Duration L<Music::Duration::Partition|https://metacpan.org/dist/Music-Duration-Partition> Music::Gestalt Music::Guidonian Music::Harmonics Music::MelodicDevice::Inversion Music::MelodicDevice::Transposition Music::MelodicDevice::Ornamentation Music::NeoRiemannianTonnetz Music::Note Music::Note::Frequency Music::Note::Role::Operators Music::PitchNum Music::RecRhythm Music::RhythmSet Music::ScaleNote L<Music::Scales|https://metacpan.org/dist/Music-Scales> Music::Tempo Music::Tension Music::ToRoman Music::VoiceGen Music::Voss Text::Chord::Piano
+
+=begin note
+
+Linked music construction modules are those mentioned in this presentation.
+
+=end note
+
+=head1 Basic Algorithms 1 of 2
+
+=begin perl
+
+# Setup, synch, & write
+
+use MIDI::Util qw(setup_score);
+
+my $score = setup_score(); # default piano, volume, bpm, etc
+
+$score->synch(
+    sub { bass($score) },
+    sub { treble($score) },
+) for 1 .. 2;
+
+$score->write_score("$0.mid");
+
+=end perl
+
+=begin note
+
+Following slides show complete programs.
+
+1st: score and synchronization.
+
+=end note
+
+=head1 Basic Algorithms 2 of 2
+
+=begin perl
+
+sub bass {
+    my ($score) = @_;
+    for my $note (qw(C3 E3 G3 C4)) {
+        $score->n('hn', $note);
+    }
+}
+sub treble {
+    my ($score) = @_;
+    for my $note (qw(E4 E4 F4 G4  G4 F4 E4 D4  C4 C4 D4 E4  E4 D4 D4)) {
+        $score->n('en', $note);
+        $score->r('en');
+    }
+}
+
+=end perl
+
+=begin note
+
+(~/sandbox/Music/ode-to-joy-slide.pl)
+
+=end note
+
+=head1 Basic Algorithms 1 of 3
+
+=begin perl
+
+# Using random pitches instead of static
+
+use MIDI::Util qw(setup_score set_chan_patch);
+use Music::Scales qw(get_scale_MIDI);
+
+my $score = setup_score(bpm => 120, volume => 120);
+
+$score->synch(
+    sub { bass($score) },
+    sub { treble($score) },
+) for 1 .. 2;
+
+$score->write_score("$0.mid");
+
+=end perl
+
+=begin note
+
+Music programs are not "mission critical."
+
+They are not "time-sensitive." Not "real-time."
+
+1st: Music::Scales and score settings.
+
+=end note
+
+=head1 Basic Algorithms 2 of 3
+
+=begin perl
+
+sub bass {
+    my ($score) = @_;
+
+    set_chan_patch($score, 0, 35);
+
+    my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
+
+    for my $n (1 .. 4) {
+        my $pitch = $pitches[int rand @pitches];
+        $score->n('hn', $pitch);
+    }
+}
+
+=end perl
+
+=begin note
+
+And here is the bass part.
+
+2nd: Fretless bass patch on channel zero. Scale pitches in a non-clashing scale. Add four random pitches to the score, for a half-note each.
+
+=end note
+
+=head1 Basic Algorithms 3 of 3
+
+=begin perl
+
+sub treble {
+    my ($score) = @_;
+    set_chan_patch($score, 1, 0);
+    my @pitches = (
+        get_scale_MIDI('C', 4, 'major'),
+        get_scale_MIDI('C', 5, 'major'),
+    );
+    for my $n (1 .. 4) {
+        my $pitch = $pitches[int rand @pitches];
+        $score->n('qn', $pitch);
+        $score->r('qn');
+    }
+}
+
+=end perl
+
+=begin note
+
+(ex-04-03.pl)
+
+Treble uses two octaves, as opposed to the bass part's one.
+
+Instead of half-notes, add a quarter-note and a quarter-rest.
+
+=end note
+
+=head1 Basic Algorithms 1 of 2
+
+=begin perl
+
+# Play a list of named chords held for a whole note each:
+
+use Data::Dumper::Compact qw(ddc);
+use MIDI::Util qw(setup_score midi_format);
+use Music::Chord::Note ();
+
+my $score = setup_score();
+
+my $mcn = Music::Chord::Note->new;
+
+=end perl
+
+=begin note
+
+1st: Instantiate a new chord-to-notes object.
+
+=end note
+
+=head1 Basic Algorithms 2 of 2
+
+=begin perl
+
+for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
+    my @chord = $mcn->chord_with_octave($named, 4);
+
+    @chord = midi_format(@chord);
+    print ddc(\@chord);  # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
+
+    $score->n('wn', @chord);
+}
+
+$score->write_score("$0.mid");
+
+=end perl
+
+=begin note
+
+(ex-08-02.pl)
+
+=end note
+
+=head1 Groove-Tool
+
+=over
+
+=item *
+
+Generate combinatorial rhythmic patterns, e.g. Euclidean and Christoffel words
+
+=item *
+
+Produce a randomized, figured bass part
+
+=item *
+
+morbo groovetool.pl # L<http://127.0.0.1:3000>
+
+=back
+
+=begin note
+
+...
+
+=end note
+
+=head1 Instantiate a Drummer
+
+=begin perl
+
+# Everything needed to add drums to a MIDI score and more:
+
+my $d = MIDI::Drummer::Tiny->new(
+    file   => $self->filename,
+    bars   => 4 * $self->repeat,
+    bpm    => $self->bpm,
+    reverb => $self->reverb,
+    volume => $self->volume,
+    # etc...
+);
+
+=end perl
+
+=begin note
+
+...
+
+=end note
+
+=head1 Drummer Decisions
+
+=begin perl
+
+if ($part->{style} eq 'euclid') {
+    push @phrases, sub { $self->euclidean_part($part, $key) };
+}
+elsif ($part->{style} eq 'christoffel') {
+    push @phrases, sub { $self->christoffel_part($part, $key) };
+}
+elsif ($part->{style} eq 'pfold') {
+    push @phrases, sub { $self->pfold_part($part, $key) };
+}
+
+=end perl
+
+(Where $key is a unique phrase identifier. And "pfold" is another type of pattern.)
+
+=begin note
+
+Now that I look at it, looks like I could simplify the syntax with a dispatch table.
+
+=end note
+
+=head1 Figured Bass Part 1 of 2
+
+=begin perl
+
+# Phrase generator for rhythmic motifs:
+
+my $mdp = Music::Duration::Partition->new(
+    size    => 4, # number of beats to render
+    pool    => [qw(hn dqn qn en)],
+    weights => [ 1, 1, 2, 2 ],
+    groups  => [ 1, 1, 1, 2 ],
+);
+
+my @motifs = map { $mdp->motif } 1 .. 2;
+
+=end perl
+
+=begin note
+
+...
+
+=end note
+
+=head1 Figured Bass Part 2 of 2
+
+=begin perl
+
+my @pitches = get_scale_MIDI($note, $octave, $scale);
+
+my $voice = Music::VoiceGen->new(
+    pitches   => \@pitches,
+    intervals => [qw/-4 -3 -2 2 3 4/],
+
+);
+
+my @notes1 = map { $voice->rand } $motifs[0]->@*;
+my @notes2 = map { $voice->rand } $motifs[1]->@*;
+
+=end perl
+
+=begin note
+
+Excellent Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
+
+=end note
+
+=head1 Links
+
+This Slideshow is
+L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
+(and L<made with S5|https://metacpan.org/dist/Pod-S5>)
+
+L<Perl Algorithmic Composition Wiki|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
+
+The L<Groove-Tool|https://github.com/ology/Groove-Tool>,
+L<Rock-Tool|https://github.com/ology/Rock-Tool> and
+L<Jazz-Tool|https://github.com/ology/Jazz-Tool> on GitHub
+
+My experiments with MIDI-Perl L<on GitHub|https://github.com/ology/Music/>
+
+Shameless plug: My L<latest album "XI"|https://ology.net/XI/> is on youtube, spotify, apple music, etc.,
+and includes the partially algorithmic tune "Permutational" - Check it out!
+
+=cut
