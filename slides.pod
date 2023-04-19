@@ -189,7 +189,6 @@ use MIDI::Util qw(setup_score set_chan_patch);
 use Music::Scales qw(get_scale_MIDI);
 
 my $score = setup_score(bpm => 120, volume => 120);
-
 $score->synch(
     sub { bass($score) },
     sub { treble($score) },
@@ -277,11 +276,12 @@ use MIDI::Util qw(setup_score midi_format);
 use Music::Chord::Note ();
 
 my $score = setup_score();
-
 $score->synch(
     sub { chords($score) },
     sub { treble($score) },
 ) for 1 .. 2;
+
+$score->write_score("$0.mid");
 
 =end perl
 
@@ -297,7 +297,9 @@ $score->synch(
 
 sub chords {
     my ($score) = @_;
+
     my $mcn = Music::Chord::Note->new;
+
     for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm Cm7)) {
         my @chord = $mcn->chord_with_octave($named, 4);
         @chord = midi_format(@chord);
