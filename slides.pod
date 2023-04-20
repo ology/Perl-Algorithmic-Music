@@ -62,7 +62,7 @@ Kittens!
 
 =item *
 
-Applied music theory (i.e. algorithmic music can "exercise" a theory)
+Applied music theory (i.e. can "exercise" a theory)
 
 =item *
 
@@ -70,7 +70,7 @@ Writing MIDI files
 
 =item *
 
-High-level, OO MIDI score construction
+High-level, OO MIDI score construction - Audio LEGOs
 
 =item *
 
