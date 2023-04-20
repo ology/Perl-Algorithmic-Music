@@ -400,20 +400,20 @@ my $d = MIDI::Drummer::Tiny->new(
 if ($part->{style} eq 'euclid') {
     push @phrases, sub { $self->euclidean_part($part, $key) };
 }
-elsif ($part->{style} eq 'christoffel') {
-    push @phrases, sub { $self->christoffel_part($part, $key) };
-}
-elsif ($part->{style} eq 'pfold') {
-    push @phrases, sub { $self->pfold_part($part, $key) };
+...
+sub euclidean_pattern {
+    my ($self, $part) = @_;
+    my $sequence = $self->creator->euclid($part->{onsets}, $self->size);
+    $sequence = $self->creator->rotate_n($part->{shift}, $sequence)
+        if $part->{shift};
+    return join '', @$sequence;
 }
 
 =end perl
 
-(Where $key is a unique phrase identifier. And "pfold" is another type of pattern.)
-
 =begin note
 
-Now that I look at it, looks like I could simplify the syntax with a dispatch table.
+...
 
 =end note
 
