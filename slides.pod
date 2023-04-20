@@ -393,31 +393,6 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =end note
 
-=head1 Drummer Decisions
-
-=begin perl
-
-if ($part->{style} eq 'euclid') {
-    push @phrases, sub { $self->euclidean_part($part, $key) };
-}
-...
-sub euclidean_part {
-    my ($self, $part, $key) = @_;
-    my $pattern = $self->euclidean_pattern($part);
-    $self->drummer->pattern(
-        instrument => $part->{strike},
-        patterns   => [ ($pattern) x $part->{bars} ],
-    );
-}
-
-=end perl
-
-=begin note
-
-...
-
-=end note
-
 =head1 Figured Bass Part 1 of 2
 
 =begin perl
