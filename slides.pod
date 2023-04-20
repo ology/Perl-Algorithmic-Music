@@ -401,12 +401,13 @@ if ($part->{style} eq 'euclid') {
     push @phrases, sub { $self->euclidean_part($part, $key) };
 }
 ...
-sub euclidean_pattern {
-    my ($self, $part) = @_;
-    my $sequence = $self->creator->euclid($part->{onsets}, $self->size);
-    $sequence = $self->creator->rotate_n($part->{shift}, $sequence)
-        if $part->{shift};
-    return join '', @$sequence;
+sub euclidean_part {
+    my ($self, $part, $key) = @_;
+    my $pattern = $self->euclidean_pattern($part);
+    $self->drummer->pattern(
+        instrument => $part->{strike},
+        patterns   => [ ($pattern) x $part->{bars} ],
+    );
 }
 
 =end perl
