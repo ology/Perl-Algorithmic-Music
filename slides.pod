@@ -393,14 +393,14 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =end note
 
-=head1 Figured Bass Part 1 of 2
+=head1 Figured Bass Part 1 of 3
 
 =begin perl
 
 # Phrase generator for rhythmic motifs:
 
 my $mdp = Music::Duration::Partition->new(
-    size    => 4, # number of beats to render
+    size    => 3, # number of beats to render
     pool    => [qw(hn dqn qn en)],
     weights => [ 1, 1, 2, 2 ],
     groups  => [ 1, 1, 1, 2 ],
@@ -416,7 +416,7 @@ my @motifs = map { $mdp->motif } 1 .. 2;
 
 =end note
 
-=head1 Figured Bass Part 2 of 2
+=head1 Figured Bass Part 2 of 3
 
 =begin perl
 
@@ -429,13 +429,36 @@ my $voice = Music::VoiceGen->new(
 );
 
 my @notes1 = map { $voice->rand } $motifs[0]->@*;
-my @notes2 = map { $voice->rand } $motifs[1]->@*;
 
 =end perl
 
 =begin note
 
 Excellent Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
+
+=end note
+
+=head1 Figured Bass Part 3 of 3
+
+=begin perl
+
+for my $i (1 .. $bars) {
+    if ($i % 2) {
+        $mdp->add_to_score($self->drummer->score, $motifs[0], \@notes1);
+    }   
+    else {
+        my @notes2 = map { $voice->rand } $motifs[1]->@*;
+        $mdp->add_to_score($self->drummer->score, $motifs[1], \@notes2);
+    }   
+
+    $self->drummer->rest($self->drummer->quarter);
+}
+
+=end perl
+
+=begin note
+
+...
 
 =end note
 
