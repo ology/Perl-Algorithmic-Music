@@ -425,7 +425,6 @@ my @pitches = get_scale_MIDI($note, $octave, $scale);
 my $voice = Music::VoiceGen->new(
     pitches   => \@pitches,
     intervals => [qw/-4 -3 -2 2 3 4/],
-
 );
 
 my @notes1 = map { $voice->rand } $motifs[0]->@*;
