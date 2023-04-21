@@ -421,7 +421,7 @@ my $voice = Music::VoiceGen->new(
     intervals => [qw/-4 -3 -2 2 3 4/],
 );
 
-# main phrase notes
+# main phrase voices
 my @voices1 = map { $voice->rand } $motifs[0]->@*;
 
 =end perl
