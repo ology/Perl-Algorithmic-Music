@@ -92,12 +92,6 @@ Good ol' procedural algorithms
 
 How do you construct a rhythm?
 
-=over
-
-=item With the MIDI::Drummer::Tiny module!
-
-=back
-
 =item *
 
 How do you generate pleasing harmony?
