@@ -406,7 +406,7 @@ my $mdp = Music::Duration::Partition->new(
     groups  => [ 1, 1, 1, 2 ],
 );
 
-my @motifs = map { $mdp->motif } 1 .. 2;
+my @motifs = $mdp->motifs(2);
 
 =end perl
 
