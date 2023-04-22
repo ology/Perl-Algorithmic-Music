@@ -179,7 +179,7 @@ sub treble {
 
 =begin note
 
-(code-ode-to-joy-slide.pl)
+(code-otj-slide.pl)
 
 =end note
 
@@ -187,7 +187,7 @@ sub treble {
 
 =begin perl
 
-# Using random instead of static pitches
+# Using random pitches instead of static
 
 use MIDI::Util qw(setup_score set_chan_patch);
 use Music::Scales qw(get_scale_MIDI);
@@ -204,7 +204,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Music::Scales and score settings.
+Shows Music::Scales and score settings.
 
 =end note
 
@@ -255,7 +255,7 @@ sub treble {
 
 =begin note
 
-(code-ex-04-03.pl)
+(code-rand-pitches.pl)
 
 Treble uses two octaves, as opposed to the bass part's one.
 
