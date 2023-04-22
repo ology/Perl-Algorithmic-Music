@@ -6,7 +6,7 @@ Set locktime to 30 min. Search settings for:
       Auto lock when screen turns off
         30 minutes
 
-From vim:
+> cd /home/gene/sandbox/Perl-Algorithmic-Music/
 
 > vit parse-notes.pl
 :!perl % slides.pod > slides/notes.html
@@ -14,7 +14,7 @@ From vim:
 > vit slides.pod
 :!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
 
-> vit ex-02-02.pl ex-04-03.pl ex-08-02.pl
+> vit code-*
 :!rm %.mid ; perl % ; timidity %.mid
 
 Or:
