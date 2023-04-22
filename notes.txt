@@ -14,7 +14,7 @@ Set locktime to 30 min. Search settings for:
 > vit slides.pod
 :!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
 
-> vit code-*
+> vit code-*.pl
 :!rm %.mid ; perl % ; timidity %.mid
 
 Or:
