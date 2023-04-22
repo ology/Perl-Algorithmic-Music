@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 use Data::Dumper::Compact qw(ddc);
-use MIDI::Util qw(setup_score midi_format);
+use MIDI::Util qw(setup_score set_chan_patch midi_format);
 use Music::Chord::Note ();
 
 my $score = setup_score();
