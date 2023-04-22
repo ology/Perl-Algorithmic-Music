@@ -153,9 +153,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Following slides show complete programs.
-
-1st: score and synchronization.
+These slides show complete programs.
 
 =end note
 
