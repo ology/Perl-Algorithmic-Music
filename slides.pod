@@ -296,8 +296,8 @@ sub chords {
 
     for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm Cm7)) {
         my @chord = $mcn->chord_with_octave($named, 4);
-        # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
         @chord = midi_format(@chord);
+        # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
         $score->n('wn', @chord);
     }
 }
