@@ -19,7 +19,6 @@ sub bass {
 
   my @pitches = (
     get_scale_MIDI('C', 2, 'pentatonic'),
-#    get_scale_MIDI('C', 3, 'pentatonic'),
   );
 
   for my $n (1 .. 4) {
