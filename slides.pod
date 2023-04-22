@@ -259,7 +259,7 @@ Treble uses two octaves, as opposed to the bass part's one.
 
 =end note
 
-=head1 Basic Algorithms 1 of 3
+=head1 Basic Algorithms 1 of 2
 
 =begin perl
 
@@ -285,7 +285,7 @@ $score->write_score("$0.mid");
 
 =end note
 
-=head1 Basic Algorithms 2 of 3
+=head1 Basic Algorithms 2 of 2
 
 =begin perl
 
