@@ -11,7 +11,7 @@ my $score = setup_score();
 $score->synch(
     sub { chords($score) },
     sub { treble($score) },
-) for 1 .. 2;
+);
 
 $score->write_score("$0.mid");
 
@@ -42,6 +42,5 @@ sub treble {
     for my $n (1 .. 4 * 8) { # bars * number of bars
         my $pitch = $pitches[int rand @pitches];
         $score->n('qn', $pitch);
-        $score->r('qn');
     }
 }
