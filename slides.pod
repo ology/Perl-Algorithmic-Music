@@ -145,7 +145,7 @@ my $score = setup_score(); # default piano, volume, bpm, etc
 $score->synch(
     sub { bass($score) },
     sub { treble($score) },
-) for 1 .. 2;
+);
 
 $score->write_score("$0.mid");
 
@@ -178,7 +178,7 @@ sub treble {
 
 =begin note
 
-(code-otj-slide.pl)
+(code-1-otj.pl)
 
 =end note
 
@@ -253,7 +253,7 @@ sub treble {
 
 =begin note
 
-(code-rand-pitches.pl)
+(code-2-random.pl)
 
 Treble uses two octaves, as opposed to the bass part's one.
 
@@ -306,7 +306,7 @@ sub chords {
 
 =begin note
 
-(code-chord-slide.pl)
+(code-3-chords.pl)
 
 =end note
 
