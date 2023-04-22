@@ -17,7 +17,7 @@ sub bass {
     my ($score) = @_;
 
     for my $note (qw(C3 E3 G3 C4)) {
-        $score->n('hn', $note);
+        $score->n('wn', $note);
     }
 }
 
@@ -25,6 +25,6 @@ sub treble {
     my ($score) = @_;
 
     for my $note (qw(E4 E4 F4 G4  G4 F4 E4 D4  C4 C4 D4 E4  E4 D4 D4)) {
-        $score->n('en', $note);
+        $score->n('qn', $note);
     }
 }
