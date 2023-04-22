@@ -35,8 +35,8 @@ sub treble {
     set_chan_patch($score, 1, 0);
 
     my @pitches = (
-        get_scale_MIDI('C', 4, 'major'),
-        get_scale_MIDI('C', 5, 'major'),
+        get_scale_MIDI('C', 4, 'minor'),
+        get_scale_MIDI('C', 5, 'minor'),
     );
 
     for my $n (1 .. 4 * 8) { # bars * number of bars
