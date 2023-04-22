@@ -16,7 +16,7 @@ $score->write_score("$0.mid");
 sub bass {
     my ($score) = @_;
 
-    for my $note (qw(C3 E3 G3 C4)) {
+    for my $note (qw(C3 E3 C3 G3)) {
         $score->n('wn', $note);
     }
 }
