@@ -10,7 +10,7 @@ use Music::Scales qw(get_scale_MIDI);
 my $score = setup_score();
 $score->synch(
     sub { chords($score) },
-    sub { treble($score) },
+    #sub { treble($score) },
 );
 
 $score->write_score("$0.mid");
