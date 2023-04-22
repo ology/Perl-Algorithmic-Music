@@ -5,7 +5,7 @@ use warnings;
 use MIDI::Util qw(setup_score set_chan_patch);
 use Music::Scales qw(get_scale_MIDI);
 
-my $score = setup_score(bpm => 120, volume => 120);
+my $score = setup_score(bpm => 120);
 
 $score->synch(
   \&bass,
@@ -29,7 +29,7 @@ sub bass {
 }
 
 sub treble {
-  set_chan_patch($score, 1, 0);
+  set_chan_patch($score, 1, 4);
 
   my @pitches = (
     get_scale_MIDI('C', 4, 'major'),
@@ -39,6 +39,5 @@ sub treble {
   for my $n (1 .. 4) {
     my $pitch = $pitches[int rand @pitches];
     $score->n('qn', $pitch);
-    $score->r('qn');
   }
 }
