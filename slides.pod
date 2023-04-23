@@ -162,7 +162,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-These slides show complete programs.
+...
 
 =end note
 
@@ -187,7 +187,7 @@ sub treble {
 
 =begin note
 
-(code-1-otj.pl)
+...
 
 =end note
 
@@ -201,7 +201,7 @@ sub treble {
 
 =begin note
 
-(code-1-otj.pl)
+...
 
 =end note
 
@@ -226,7 +226,7 @@ $score->write_score("$0.mid");
 
 =begin note
 
-Shows Music::Scales and score settings.
+...
 
 =end note
 
@@ -290,7 +290,7 @@ sub treble {
 
 =begin note
 
-(code-2-random.pl)
+...
 
 =end note
 
@@ -357,7 +357,7 @@ sub chords {
 
 =begin note
 
-(code-2-random.pl)
+...
 
 =end note
 
