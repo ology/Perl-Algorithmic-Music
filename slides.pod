@@ -2,7 +2,11 @@
 
 L<Gene Boggs|https://github.com/ology>
 
-G<https://ology.net/dev/Perl-Algorithmic-Music/flowchart.png>
+=begin html
+
+<img src="flowchart.png">
+
+=end html
 
 TPRC 2023 - Toronto, ON
 
@@ -182,7 +186,7 @@ sub treble {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="audio/code-1-otj.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-1-otj.pl.mp3"></audio>
 
 =end html
 
@@ -271,7 +275,7 @@ sub treble {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="audio/code-2-random.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-2-random.pl.mp3"></audio>
 
 =end html
 
@@ -336,9 +340,9 @@ sub chords {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="audio/code-3-chords.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-3-chords.pl.mp3"></audio>
 <p></p>
-<audio controls><source type="audio/mp3" src="audio/code-3-chords2.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-3-chords2.pl.mp3"></audio>
 
 =end html
 
