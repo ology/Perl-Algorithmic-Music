@@ -52,7 +52,7 @@ Kittens!
 
 =begin html
 
-<img src="https://placekitten.com/400/400">
+G<https://placekitten.com/400/400>
 
 =end html
 
