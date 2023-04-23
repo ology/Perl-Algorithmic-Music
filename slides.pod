@@ -338,7 +338,7 @@ morbo groovetool.pl # L<http://127.0.0.1:3000>
 
 =begin perl
 
-# Everything needed to add drums to a MIDI score and more:
+# Everything needed to add drums to a MIDI score and more
 
 my $d = MIDI::Drummer::Tiny->new(
     file   => $self->filename,
@@ -361,7 +361,7 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =begin perl
 
-# Phrase generator for rhythmic motifs:
+# Phrase generator for rhythmic motifs
 
 my $mdp = Music::Duration::Partition->new(
     size    => 3, # number of beats to render
