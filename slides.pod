@@ -143,7 +143,7 @@ Linked music construction modules are those mentioned in this presentation.
 
 =head1 Basic Algorithms 1 of 2
 
-=begin perl
+=begin pre
 
 # Setup, Synch, & Write
 
@@ -158,7 +158,7 @@ $score->synch(
 
 $score->write_score("$0.mid");
 
-=end perl
+=end pre
 
 =begin note
 
@@ -168,7 +168,7 @@ $score->write_score("$0.mid");
 
 =head1 Basic Algorithms 2 of 2
 
-=begin perl
+=begin pre
 
 sub bass {
     my ($score) = @_;
@@ -183,7 +183,7 @@ sub treble {
     }
 }
 
-=end perl
+=end pre
 
 =begin note
 
@@ -207,7 +207,7 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 3
 
-=begin perl
+=begin pre
 
 # Using random pitches instead of static
 
@@ -222,7 +222,7 @@ $score->synch(
 
 $score->write_score("$0.mid");
 
-=end perl
+=end pre
 
 =begin note
 
@@ -232,7 +232,7 @@ $score->write_score("$0.mid");
 
 =head1 Basic Algorithms 2 of 3
 
-=begin perl
+=begin pre
 
 sub bass {
     my ($score) = @_;
@@ -247,7 +247,7 @@ sub bass {
     }
 }
 
-=end perl
+=end pre
 
 =begin note
 
@@ -257,7 +257,7 @@ sub bass {
 
 =head1 Basic Algorithms 3 of 3
 
-=begin perl
+=begin pre
 
 sub treble {
     my ($score) = @_;
@@ -272,7 +272,7 @@ sub treble {
     }
 }
 
-=end perl
+=end pre
 
 =begin note
 
@@ -296,7 +296,7 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 2
 
-=begin perl
+=begin pre
 
 # Play a list of named chords held for a whole note each
 
@@ -312,7 +312,7 @@ $score->synch(
 
 $score->write_score("$0.mid");
 
-=end perl
+=end pre
 
 =begin note
 
@@ -322,7 +322,7 @@ $score->write_score("$0.mid");
 
 =head1 Basic Algorithms 2 of 2
 
-=begin perl
+=begin pre
 
 sub chords {
     my ($score) = @_;
@@ -337,7 +337,7 @@ sub chords {
     }
 }
 
-=end perl
+=end pre
 
 =begin note
 
@@ -387,7 +387,7 @@ morbo groovetool.pl  # L<http://127.0.0.1:3000>
 
 =head1 Instantiate a Drummer
 
-=begin perl
+=begin pre
 
 # Everything needed to add drums to a MIDI score and more
 
@@ -400,7 +400,7 @@ my $d = MIDI::Drummer::Tiny->new(
     # etc...
 );
 
-=end perl
+=end pre
 
 =begin note
 
@@ -410,7 +410,7 @@ my $d = MIDI::Drummer::Tiny->new(
 
 =head1 Figured Bass Part 1 of 3
 
-=begin perl
+=begin pre
 
 # Phrase generator for rhythmic motifs
 
@@ -423,7 +423,7 @@ my $phrase = Music::Duration::Partition->new(
 
 my @motifs = $phrase->motifs(2);
 
-=end perl
+=end pre
 
 =begin note
 
@@ -433,7 +433,7 @@ my @motifs = $phrase->motifs(2);
 
 =head1 Figured Bass Part 2 of 3
 
-=begin perl
+=begin pre
 
 my @pitches = get_scale_MIDI($note, $octave, $scale);
 
@@ -445,7 +445,7 @@ my $voice = Music::VoiceGen->new(
 # main phrase voices
 my @voices1 = map { $voice->rand } $motifs[0]->@*;
 
-=end perl
+=end pre
 
 =begin note
 
@@ -455,7 +455,7 @@ Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
 
 =head1 Figured Bass Part 3 of 3
 
-=begin perl
+=begin pre
 
 for my $i (1 .. $bars) {
     if ($i % 2) {
@@ -469,7 +469,7 @@ for my $i (1 .. $bars) {
     $self->drummer->rest($self->drummer->quarter);  # SAME as $score->r('qn');
 }
 
-=end perl
+=end pre
 
 =begin note
 
