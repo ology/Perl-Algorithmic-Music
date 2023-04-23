@@ -70,7 +70,13 @@ Writing MIDI files
 
 =item *
 
-High-level, OO MIDI score construction - Audio LEGOs
+High-level, OO MIDI score construction
+
+=over
+
+=item Audio LEGOs
+
+=back
 
 =item *
 
