@@ -297,7 +297,7 @@ sub chords {
     for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm Cm7)) {
         my @chord = $mcn->chord_with_octave($named, 4);  # Lowest note in octave 4
         @chord = midi_format(@chord);
-        # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
+        # ['C4', 'Ds4', 'G4', 'As4'], ... ['G4', 'As4', 'D5'], etc.
         $score->n('wn', @chord);
     }
 }
