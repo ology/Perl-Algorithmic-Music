@@ -140,7 +140,7 @@ Linked music construction modules are those mentioned in this presentation.
 
 use MIDI::Util qw(setup_score);
 
-my $score = setup_score(); # Default piano, volume, bpm, etc
+my $score = setup_score();  # Default piano, volume, bpm, etc
 
 $score->synch(
     sub { bass($score) },
@@ -163,7 +163,7 @@ These slides show complete programs.
 
 sub bass {
     my ($score) = @_;
-    for my $note (qw(C3 E3 C3 G3)) {    # <- Static notes
+    for my $note (qw(C3 E3 C3 G3)) {  # <- Static notes
         $score->n('wn', $note);
     }
 }
@@ -189,13 +189,13 @@ sub treble {
 # Using random pitches instead of static
 
 use MIDI::Util qw(setup_score set_chan_patch);
-use Music::Scales qw(get_scale_MIDI); # <- NEW
+use Music::Scales qw(get_scale_MIDI);  # <- NEW
 
 my $score = setup_score(bpm => 120);  # <- NEW ARG
 $score->synch(
     sub { bass($score) },
     sub { treble($score) },
-) for 1 .. 4;                         # <- NEW LOOP
+) for 1 .. 4;  # <- NEW LOOP
 
 $score->write_score("$0.mid");
 
@@ -214,13 +214,13 @@ Shows Music::Scales and score settings.
 sub bass {
     my ($score) = @_;
 
-    set_chan_patch($score, 0, 35);                      # Fretless on channel 0
+    set_chan_patch($score, 0, 35);  # Fretless on channel 0
 
-    my @pitches = get_scale_MIDI('C', 2, 'pentatonic'); # Non-clashing scale octave
+    my @pitches = get_scale_MIDI('C', 2, 'pentatonic');  # Non-clashing scale octave
 
     for my $n (1 .. 4) {
-        my $pitch = $pitches[int rand @pitches];        # Random pitch
-        $score->n('hn', $pitch);                        # Add note to score
+        my $pitch = $pitches[int rand @pitches];  # Random pitch
+        $score->n('hn', $pitch);  # Add note to score
     }
 }
 
@@ -238,10 +238,10 @@ sub bass {
 
 sub treble {
     my ($score) = @_;
-    set_chan_patch($score, 1, 4); # Electric piano on ch 1
+    set_chan_patch($score, 1, 4);  # Electric piano on ch 1
     my @pitches = (
         get_scale_MIDI('C', 4, 'major'),
-        get_scale_MIDI('C', 5, 'major'), # <- TWO OCTAVES
+        get_scale_MIDI('C', 5, 'major'),  # <- TWO OCTAVES
     );
     for my $n (1 .. 4) {
         my $pitch = $pitches[int rand @pitches];
@@ -267,12 +267,12 @@ sub treble {
 
 use MIDI::Util qw(setup_score midi_format);
 use Music::Scales qw(get_scale_MIDI);
-use Music::Chord::Note ();            # <- NEW!
+use Music::Chord::Note ();  # <- NEW!
 
 my $score = setup_score();
 $score->synch(
     sub { chords($score) },
-    #sub { treble($score) }, # YMMV!
+    #sub { treble($score) },  # YMMV!
 );
 
 $score->write_score("$0.mid");
@@ -295,7 +295,7 @@ sub chords {
     my $mcn = Music::Chord::Note->new;
 
     for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm Cm7)) {
-        my @chord = $mcn->chord_with_octave($named, 4); # Lowest note in octave 4
+        my @chord = $mcn->chord_with_octave($named, 4);  # Lowest note in octave 4
         @chord = midi_format(@chord);
         # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
         $score->n('wn', @chord);
@@ -324,7 +324,7 @@ Produce a randomized, figured bass part
 
 =item *
 
-morbo groovetool.pl # L<http://127.0.0.1:3000>
+morbo groovetool.pl  # L<http://127.0.0.1:3000>
 
 =back
 
@@ -364,10 +364,10 @@ my $d = MIDI::Drummer::Tiny->new(
 # Phrase generator for rhythmic motifs
 
 my $mdp = Music::Duration::Partition->new(
-    size    => 3, # number of beats to render
+    size    => 3,  # number of beats to render
     pool    => [qw(hn dqn qn en)],
-    weights => [ 1, 1, 2, 2 ], # optional
-    groups  => [ 1, 1, 1, 2 ], # optional
+    weights => [ 1, 1, 2, 2 ],  # optional
+    groups  => [ 1, 1, 1, 2 ],  # optional
 );
 
 my @motifs = $mdp->motifs(2);
@@ -388,7 +388,7 @@ my @pitches = get_scale_MIDI($note, $octave, $scale);
 
 my $voice = Music::VoiceGen->new(
     pitches   => \@pitches,
-    intervals => [qw/-4 -3 -2 2 3 4/], # Allowed interval jumps
+    intervals => [qw/-4 -3 -2 2 3 4/],  # Allowed interval jumps
 );
 
 # main phrase voices
@@ -415,7 +415,7 @@ for my $i (1 .. $bars) {
         $mdp->add_to_score($self->drummer->score, $motifs[1], \@voices2);
     }   
 
-    $self->drummer->rest($self->drummer->quarter); # SAME as $score->r('qn');
+    $self->drummer->rest($self->drummer->quarter);  # SAME as $score->r('qn');
 }
 
 =end perl
