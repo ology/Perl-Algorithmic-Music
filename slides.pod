@@ -432,7 +432,7 @@ This Slideshow is
 L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
 (and L<made with S5|https://metacpan.org/dist/Pod-S5>)
 
-L<Perl Algorithmic Composition Wiki|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
+L<Perl Algorithmic Composition Tutorial|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
 
 The L<Groove-Tool|https://github.com/ology/Groove-Tool>,
 L<Rock-Tool|https://github.com/ology/Rock-Tool> and
