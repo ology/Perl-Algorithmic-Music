@@ -192,7 +192,7 @@ sub treble {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-1-otj.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-1-otj.mp3"></audio>
 
 =end html
 
@@ -281,7 +281,7 @@ sub treble {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-2-random.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-2-random.mp3"></audio>
 
 =end html
 
@@ -346,9 +346,9 @@ sub chords {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-3-chords.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-3-chords.mp3"></audio>
 <p></p>
-<audio controls><source type="audio/mp3" src="code-3-chords2.pl.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-3-chords2.mp3"></audio>
 
 =end html
 
