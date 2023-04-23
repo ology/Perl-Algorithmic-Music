@@ -20,7 +20,7 @@ sub chords {
 
     my $mcn = Music::Chord::Note->new;
 
-    for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm Cm7)) {
+    for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
         my @chord = $mcn->chord_with_octave($named, 4);
         @chord = midi_format(@chord);
         print ddc(\@chord);  # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
@@ -37,7 +37,7 @@ sub treble {
         get_scale_MIDI('C', 5, 'minor'),
     );
 
-    for my $n (1 .. 4 * 8) { # bars * number of bars
+    for my $n (1 .. 4 * 7) { # bars * number of bars
         my $pitch = $pitches[int rand @pitches];
         $score->n('qn', $pitch);
     }
