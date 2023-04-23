@@ -143,9 +143,9 @@ Linked music construction modules are those mentioned in this presentation.
 
 =head1 Basic Algorithms 1 of 2
 
-=begin pre
+Setup, Synch, & Write
 
-# Setup, Synch, & Write
+=begin pre
 
 use MIDI::Util qw(setup_score);
 
@@ -210,9 +210,9 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 3
 
-=begin pre
+Using random pitches instead of static
 
-# Using random pitches instead of static
+=begin pre
 
 use MIDI::Util qw(setup_score set_chan_patch); # New import
 use Music::Scales qw(get_scale_MIDI);          # New module
@@ -303,9 +303,9 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 2
 
-=begin pre
+Play a list of named chords held for a whole note each
 
-# Play a list of named chords held for a whole note each
+=begin pre
 
 use MIDI::Util qw(setup_score midi_format);  # New import
 use Music::Scales qw(get_scale_MIDI);
