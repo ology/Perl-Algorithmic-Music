@@ -504,7 +504,7 @@ My experiments with MIDI-Perl are L<on GitHub|https://github.com/ology/Music/>
 
 Shameless plug: My L<latest album "XI"|https://ology.net/XI/> is on youtube, spotify, apple music, etc.,
 and includes the partially algorithmic tune
-"L<Permutational|>"
+"L<Permutational|https://www.youtube.com/watch?v=dhXMhaMcgag>"
 - Check it out!
 
 =cut
