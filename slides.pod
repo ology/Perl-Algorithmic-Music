@@ -398,7 +398,7 @@ my @voices1 = map { $voice->rand } $motifs[0]->@*;
 
 =begin note
 
-Excellent Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
+Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
 
 =end note
 
