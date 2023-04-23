@@ -188,7 +188,7 @@ sub treble {
 
 # Using random pitches instead of static
 
-use MIDI::Util qw(setup_score set_chan_patch);
+use MIDI::Util qw(setup_score set_chan_patch);  # <- NEW IMPORT
 use Music::Scales qw(get_scale_MIDI);  # <- NEW
 
 my $score = setup_score(bpm => 120);  # <- NEW ARG
