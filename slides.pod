@@ -426,10 +426,10 @@ my $d = MIDI::Drummer::Tiny->new(
 # Phrase generator for rhythmic motifs
 
 my $phrase = Music::Duration::Partition->new(
-  size    => 3,                  # number of beats to render
+  size    => 3,                   # number of beats to render
   pool    => [qw(hn dqn qn en)],
-  weights => [   1, 1,  2, 2 ],  # optional
-  groups  => [   1, 1,  1, 2 ],  # optional
+  weights => [   1, 1,  2, 2  ],  # optional
+  groups  => [   1, 1,  1, 2  ],  # optional
 );
 
 my @motifs = $phrase->motifs(2);
