@@ -182,6 +182,20 @@ sub treble {
 
 =end note
 
+=head1 Audio Example 1
+
+=begin html
+
+<audio controls><source type="audio/mp3" src="audio/code-1-otj.pl.mp3"></audio>
+
+=end html
+
+=begin note
+
+(code-1-otj.pl)
+
+=end note
+
 =head1 Basic Algorithms 1 of 3
 
 =begin perl
