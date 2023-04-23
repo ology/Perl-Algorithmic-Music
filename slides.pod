@@ -179,11 +179,11 @@ sub bass {
 }
 
 sub treble {
-    my ($score) = @_;
+  my ($score) = @_;
 
-    for my $note (qw(E4 E4 F4 G4 G4 F4 E4 D4 C4 C4 D4 E4 E4 D4 D4)) {
-        $score->n('qn', $note);
-    }
+  for my $note (qw(E4 E4 F4 G4 G4 F4 E4 D4 C4 C4 D4 E4 E4 D4 D4)) {
+    $score->n('qn', $note);
+  }
 }
 
 =end pre
