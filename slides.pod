@@ -241,7 +241,7 @@ $score->write_score("$0.mid");
 sub bass {
   my ($score) = @_;
 
-  set_chan_patch($score, 0, 35);         # Fretless on channel 0
+  set_chan_patch($score, 0, 35);       # Fretless on channel 0
 
   # Usually non-clashing scale octave
   my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
