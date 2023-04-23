@@ -338,7 +338,6 @@ sub chords {
   my $mcn = Music::Chord::Note->new;
 
   for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
-    # Lowest note in octave 4 
     my @chord = $mcn->chord_with_octave($named, 4);
 
     @chord = midi_format(@chord);
