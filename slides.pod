@@ -265,9 +265,9 @@ sub treble {
 
 # Play a list of named chords held for a whole note each
 
-use MIDI::Util qw(setup_score midi_format);
+use MIDI::Util qw(setup_score midi_format);  # <- NEW import
 use Music::Scales qw(get_scale_MIDI);
-use Music::Chord::Note ();  # <- NEW!
+use Music::Chord::Note ();  # <- NEW module
 
 my $score = setup_score();
 $score->synch(
