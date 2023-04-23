@@ -315,7 +315,7 @@ my $score = setup_score();
 
 $score->synch(
   sub { chords($score) },
-  #sub { treble($score) },  # YMMV!
+  #sub { treble($score) },                   # YMMV!
 );
 
 $score->write_score("$0.mid");
