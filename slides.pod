@@ -502,8 +502,6 @@ The L<Groove-Tool|https://github.com/ology/Groove-Tool>,
 L<Rock-Tool|https://github.com/ology/Rock-Tool> and
 L<Jazz-Tool|https://github.com/ology/Jazz-Tool> on GitHub
 
-My experiments with MIDI-Perl are L<on GitHub|https://github.com/ology/Music/>
-
 Shameless plug: My L<latest album "XI"|https://ology.net/XI/> - youtube, spotify, apple music, etc.
 and includes the partially algorithmic tune
 "L<Permutational|https://www.youtube.com/watch?v=dhXMhaMcgag>"
