@@ -247,8 +247,8 @@ sub bass {
   my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
 
   for my $n (1 .. 4) {
-    my $pitch = $pitches[int rand @pitches];    # Random pitch
-    $score->n('hn', $pitch);  # Add note to score
+    my $pitch = $pitches[int rand @pitches];  # Random pitch
+    $score->n('hn', $pitch);                  # Add note to score
   }
 }
 
