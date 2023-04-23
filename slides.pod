@@ -50,11 +50,7 @@ Kittens!
 
 =head1 Sorry!
 
-=begin html
-
 G<https://placekitten.com/400/400>
-
-=end html
 
 =head1 What this IS about
 
