@@ -267,11 +267,11 @@ sub bass {
 sub treble {
   my ($score) = @_;
 
-  set_chan_patch($score, 1, 4);         # Electric piano on ch 1
+  set_chan_patch($score, 1, 4);        # Electric piano on ch 1
 
   my @pitches = (
     get_scale_MIDI('C', 4, 'major'),
-    get_scale_MIDI('C', 5, 'major'),  # <- 2 octaves
+    get_scale_MIDI('C', 5, 'major'),   # <- 2 octaves
   );
 
   for my $n (1 .. 4) {
