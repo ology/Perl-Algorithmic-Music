@@ -172,13 +172,16 @@ $score->write_score("$0.mid");
 
 sub bass {
     my ($score) = @_;
+
     for my $note (qw(C3 E3 C3 G3)) {  # <- Static notes
         $score->n('wn', $note);
     }
 }
+
 sub treble {
     my ($score) = @_;
-    for my $note (qw(E4 E4 F4 G4  G4 F4 E4 D4  C4 C4 D4 E4  E4 D4 D4)) {
+
+    for my $note (qw(E4 E4 F4 G4 G4 F4 E4 D4 C4 C4 D4 E4 E4 D4 D4)) {
         $score->n('qn', $note);
     }
 }
@@ -215,6 +218,7 @@ use MIDI::Util qw(setup_score set_chan_patch);  # <- NEW import
 use Music::Scales qw(get_scale_MIDI);  # <- NEW module
 
 my $score = setup_score(bpm => 120);  # <- NEW arg
+
 $score->synch(
     sub { bass($score) },
     sub { treble($score) },
@@ -239,7 +243,8 @@ sub bass {
 
     set_chan_patch($score, 0, 35);  # Fretless on channel 0
 
-    my @pitches = get_scale_MIDI('C', 2, 'pentatonic');  # Non-clashing scale octave
+    # Usually non-clashing scale octave
+    my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
 
     for my $n (1 .. 4) {
         my $pitch = $pitches[int rand @pitches];  # Random pitch
@@ -261,11 +266,14 @@ sub bass {
 
 sub treble {
     my ($score) = @_;
+
     set_chan_patch($score, 1, 4);  # Electric piano on ch 1
+
     my @pitches = (
         get_scale_MIDI('C', 4, 'major'),
         get_scale_MIDI('C', 5, 'major'),  # <- TWO OCTAVES
     );
+
     for my $n (1 .. 4) {
         my $pitch = $pitches[int rand @pitches];
         $score->n('qn', $pitch);
@@ -305,6 +313,7 @@ use Music::Scales qw(get_scale_MIDI);
 use Music::Chord::Note ();  # <- NEW module
 
 my $score = setup_score();
+
 $score->synch(
     sub { chords($score) },
     #sub { treble($score) },  # YMMV!
@@ -330,9 +339,12 @@ sub chords {
     my $mcn = Music::Chord::Note->new;
 
     for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
-        my @chord = $mcn->chord_with_octave($named, 4);  # Lowest note in octave 4
+        # Lowest note in octave 4 
+        my @chord = $mcn->chord_with_octave($named, 4);
+
         @chord = midi_format(@chord);
         # [ C4 Ds4 G4 As4 ], ... [ G4 As4 D5 ], etc.
+
         $score->n('wn', @chord);
     }
 }
