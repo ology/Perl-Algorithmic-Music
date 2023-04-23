@@ -243,7 +243,6 @@ sub bass {
 
   set_chan_patch($score, 0, 35);       # Fretless on channel 0
 
-  # Usually non-clashing scale octave
   my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
 
   for my $n (1 .. 4) {
