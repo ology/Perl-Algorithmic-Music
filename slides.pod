@@ -476,7 +476,7 @@ for my $i (1 .. $bars) {
     $phrase->add_to_score($drummer->score, $motifs[1], \@voices2);
   }   
 
-  $drummer->rest($drummer->quarter);  # SAME as $score->r('qn');
+  $drummer->rest($drummer->quarter);
 }
 
 =end pre
