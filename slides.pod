@@ -401,7 +401,7 @@ morbo groovetool.pl  # L<http://127.0.0.1:3000>
 
 =begin pre
 
-my $d = MIDI::Drummer::Tiny->new(
+my $drummer = MIDI::Drummer::Tiny->new(
   file   => $self->filename,
   bars   => 4 * $self->repeat,
   bpm    => $self->bpm,
@@ -469,14 +469,14 @@ Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
 
 for my $i (1 .. $bars) {
   if ($i % 2) {
-    $phrase->add_to_score($self->drummer->score, $motifs[0], \@voices1);
+    $phrase->add_to_score($score, $motifs[0], \@voices1);
   }   
   else {
     my @voices2 = map { $voice->rand } $motifs[1]->@*;
-    $phrase->add_to_score($self->drummer->score, $motifs[1], \@voices2);
+    $phrase->add_to_score($score, $motifs[1], \@voices2);
   }   
 
-  $self->drummer->rest($self->drummer->quarter);  # SAME as $score->r('qn');
+  $drummer->rest($drummer->quarter);  # SAME as $score->r('qn');
 }
 
 =end pre
