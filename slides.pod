@@ -152,8 +152,8 @@ use MIDI::Util qw(setup_score);
 my $score = setup_score();  # Default piano, volume, bpm, etc
 
 $score->synch(
-    sub { bass($score) },
-    sub { treble($score) },
+  sub { bass($score) },
+  sub { treble($score) },
 );
 
 $score->write_score("$0.mid");
@@ -171,11 +171,11 @@ $score->write_score("$0.mid");
 =begin pre
 
 sub bass {
-    my ($score) = @_;
+  my ($score) = @_;
 
-    for my $note (qw(C3 E3 C3 G3)) {  # <- Static notes
-        $score->n('wn', $note);
-    }
+  for my $note (qw(C3 E3 C3 G3)) {  # <- Static notes
+    $score->n('wn', $note);
+  }
 }
 
 sub treble {
@@ -214,15 +214,15 @@ sub treble {
 
 # Using random pitches instead of static
 
-use MIDI::Util qw(setup_score set_chan_patch);  # <- New import
-use Music::Scales qw(get_scale_MIDI);           # <- New module
+use MIDI::Util qw(setup_score set_chan_patch); # New import
+use Music::Scales qw(get_scale_MIDI);          # New module
 
-my $score = setup_score(bpm => 120);            # <- New arg
+my $score = setup_score(bpm => 120);           # New arg
 
 $score->synch(
-    sub { bass($score) },
-    sub { treble($score) },
-) for 1 .. 4;                                   # <- Loop
+  sub { bass($score) },
+  sub { treble($score) },
+) for 1 .. 4;                                  # Loop
 
 $score->write_score("$0.mid");
 
@@ -239,17 +239,17 @@ $score->write_score("$0.mid");
 =begin pre
 
 sub bass {
-    my ($score) = @_;
+  my ($score) = @_;
 
-    set_chan_patch($score, 0, 35);  # Fretless on channel 0
+  set_chan_patch($score, 0, 35);         # Fretless on channel 0
 
-    # Usually non-clashing scale octave
-    my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
+  # Usually non-clashing scale octave
+  my @pitches = get_scale_MIDI('C', 2, 'pentatonic');
 
-    for my $n (1 .. 4) {
-        my $pitch = $pitches[int rand @pitches];  # Random pitch
-        $score->n('hn', $pitch);  # Add note to score
-    }
+  for my $n (1 .. 4) {
+    my $pitch = $pitches[int rand @pitches];    # Random pitch
+    $score->n('hn', $pitch);  # Add note to score
+  }
 }
 
 =end pre
@@ -265,19 +265,19 @@ sub bass {
 =begin pre
 
 sub treble {
-    my ($score) = @_;
+  my ($score) = @_;
 
-    set_chan_patch($score, 1, 4);  # Electric piano on ch 1
+  set_chan_patch($score, 1, 4);         # Electric piano on ch 1
 
-    my @pitches = (
-        get_scale_MIDI('C', 4, 'major'),
-        get_scale_MIDI('C', 5, 'major'),  # <- TWO OCTAVES
-    );
+  my @pitches = (
+    get_scale_MIDI('C', 4, 'major'),
+    get_scale_MIDI('C', 5, 'major'),  # <- 2 octaves
+  );
 
-    for my $n (1 .. 4) {
-        my $pitch = $pitches[int rand @pitches];
-        $score->n('qn', $pitch);
-    }
+  for my $n (1 .. 4) {
+    my $pitch = $pitches[int rand @pitches];
+    $score->n('qn', $pitch);
+  }
 }
 
 =end pre
@@ -308,15 +308,15 @@ sub treble {
 
 # Play a list of named chords held for a whole note each
 
-use MIDI::Util qw(setup_score midi_format);  # <- NEW import
+use MIDI::Util qw(setup_score midi_format);  # New import
 use Music::Scales qw(get_scale_MIDI);
-use Music::Chord::Note ();  # <- NEW module
+use Music::Chord::Note ();                   # New module
 
 my $score = setup_score();
 
 $score->synch(
-    sub { chords($score) },
-    #sub { treble($score) },  # YMMV!
+  sub { chords($score) },
+  #sub { treble($score) },  # YMMV!
 );
 
 $score->write_score("$0.mid");
@@ -334,19 +334,19 @@ $score->write_score("$0.mid");
 =begin pre
 
 sub chords {
-    my ($score) = @_;
+  my ($score) = @_;
 
-    my $mcn = Music::Chord::Note->new;
+  my $mcn = Music::Chord::Note->new;
 
-    for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
-        # Lowest note in octave 4 
-        my @chord = $mcn->chord_with_octave($named, 4);
+  for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
+    # Lowest note in octave 4 
+    my @chord = $mcn->chord_with_octave($named, 4);
 
-        @chord = midi_format(@chord);
-        # [ C4 Ds4 G4 As4 ], ... [ G4 As4 D5 ], etc.
+    @chord = midi_format(@chord);
+    # [ C4 Ds4 G4 As4 ], ... [ G4 As4 D5 ], etc.
 
-        $score->n('wn', @chord);
-    }
+    $score->n('wn', @chord);
+  }
 }
 
 =end pre
@@ -404,12 +404,12 @@ morbo groovetool.pl  # L<http://127.0.0.1:3000>
 # Everything needed to add drums to a MIDI score and more
 
 my $d = MIDI::Drummer::Tiny->new(
-    file   => $self->filename,
-    bars   => 4 * $self->repeat,
-    bpm    => $self->bpm,
-    reverb => $self->reverb,
-    volume => $self->volume,
-    # etc...
+  file   => $self->filename,
+  bars   => 4 * $self->repeat,
+  bpm    => $self->bpm,
+  reverb => $self->reverb,
+  volume => $self->volume,
+  # etc...
 );
 
 =end pre
@@ -427,10 +427,10 @@ my $d = MIDI::Drummer::Tiny->new(
 # Phrase generator for rhythmic motifs
 
 my $phrase = Music::Duration::Partition->new(
-    size    => 3,  # number of beats to render
-    pool    => [qw(hn dqn qn en)],
-    weights => [ 1, 1, 2, 2 ],  # optional
-    groups  => [ 1, 1, 1, 2 ],  # optional
+  size    => 3,                 # number of beats to render
+  pool    => [qw(hn dqn qn en)],
+  weights => [ 1, 1, 2, 2 ],    # optional
+  groups  => [ 1, 1, 1, 2 ],    # optional
 );
 
 my @motifs = $phrase->motifs(2);
@@ -450,8 +450,8 @@ my @motifs = $phrase->motifs(2);
 my @pitches = get_scale_MIDI($note, $octave, $scale);
 
 my $voice = Music::VoiceGen->new(
-    pitches   => \@pitches,
-    intervals => [qw/-4 -3 -2 2 3 4/],  # Allowed interval jumps
+  pitches   => \@pitches,
+  intervals => [qw/-4 -3 -2 2 3 4/],  # Allowed interval jumps
 );
 
 # main phrase voices
@@ -470,15 +470,15 @@ Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there!
 =begin pre
 
 for my $i (1 .. $bars) {
-    if ($i % 2) {
-        $phrase->add_to_score($self->drummer->score, $motifs[0], \@voices1);
-    }   
-    else {
-        my @voices2 = map { $voice->rand } $motifs[1]->@*;
-        $phrase->add_to_score($self->drummer->score, $motifs[1], \@voices2);
-    }   
+  if ($i % 2) {
+    $phrase->add_to_score($self->drummer->score, $motifs[0], \@voices1);
+  }   
+  else {
+    my @voices2 = map { $voice->rand } $motifs[1]->@*;
+    $phrase->add_to_score($self->drummer->score, $motifs[1], \@voices2);
+  }   
 
-    $self->drummer->rest($self->drummer->quarter);  # SAME as $score->r('qn');
+  $self->drummer->rest($self->drummer->quarter);  # SAME as $score->r('qn');
 }
 
 =end pre
