@@ -136,7 +136,7 @@ Linked music construction modules are those mentioned in this presentation.
 
 =begin perl
 
-# Setup, synch, & write
+# Setup, Synch, & Write
 
 use MIDI::Util qw(setup_score);
 
