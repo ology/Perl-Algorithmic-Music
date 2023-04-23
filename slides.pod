@@ -349,7 +349,7 @@ sub chords {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-3-chords.mp3"></audio>
+<audio controls><source type="audio/mp3" src="code-3-chords1.mp3"></audio>
 <p></p>
 <audio controls><source type="audio/mp3" src="code-3-chords2.mp3"></audio>
 
