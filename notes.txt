@@ -12,7 +12,7 @@ Set locktime to 30 min. Search settings for:
 :!perl % slides.pod > slides/notes.html
 
 > vit slides.pod
-:!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
+:!pod2s5 % --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" --company "Gene Boggs" --author "Gene Boggs" > /dev/null 2>&1
 
 > vit code-*.pl
 :!rm %.mid ; perl % ; timidity %.mid
@@ -21,4 +21,4 @@ Or:
 
 > perl parse-notes.pl slides.pod > slides/notes.html
 
-> pod2s5 slides.pod --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" > /dev/null 2>&1
+> pod2s5 slides.pod --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" --company "Gene Boggs" --author "Gene Boggs" > /dev/null 2>&1
