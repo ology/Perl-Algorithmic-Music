@@ -426,10 +426,10 @@ my $drummer = MIDI::Drummer::Tiny->new(
 =begin pre
 
 my $phrase = Music::Duration::Partition->new(
-  size    => 3,                   # number of beats to render
+  size    => 3,                   # Number of beats to render
   pool    => [qw(hn dqn qn en)],
-  weights => [   1, 1,  2, 2  ],  # optional
-  groups  => [   1, 1,  1, 2  ],  # optional
+  weights => [   1, 1,  2, 2  ],  # Optional
+  groups  => [   1, 1,  1, 2  ],  # Optional
 );
 
 my @motifs = $phrase->motifs(2);
