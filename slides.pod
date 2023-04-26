@@ -62,15 +62,15 @@ Good ol' procedural algorithms
 
 =item *
 
-Song / audio analysis
+Song / audio I<analysis>
 
 =item *
 
-Real-time audio / MIDI processing
+I<Real-time> audio / MIDI processing
 
 =item *
 
-Low-level handling of MIDI events (e.g. note_on, note_off, sysex)
+I<Low-level> handling of MIDI events (e.g. note_on, note_off, sysex)
 
 =item *
 
@@ -78,7 +78,7 @@ Artificial intelligence techniques (e.g. generative adversarial networks)
 
 =item *
 
-Kittens!
+I<Kittens!>
 
 =back
 
