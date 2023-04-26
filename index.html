@@ -9,7 +9,7 @@
 <meta name="generator" content="pod2s5 0.09" />
 <meta name="generator" content="S5" />
 <meta name="version" content="S5 1.1" />
-<meta name="presdate" content="Wed Apr 26 14:20:15 2023" />
+<meta name="presdate" content="Wed Apr 26 14:45:56 2023" />
 <meta name="author" content="Gene Boggs" />
 <meta name="company" content="Gene Boggs" />
 <!-- configuration parameters -->
@@ -47,7 +47,7 @@ img#me05 {top: 43px;left: 36px;}
 <div id="currentSlide"></div>
 <div id="header"></div>
 <div id="footer">
-<h1>Toronto, ON &#8226; Wed Apr 26 14:20:15 2023</h1>
+<h1>Toronto, ON &#8226; Wed Apr 26 14:45:56 2023</h1>
 <h2>https://ology.github.io/Perl-Algorithmic-Music</h2></div>
 </div><div class="slide">
 <h1>Algorithmic Music with Perl
@@ -128,7 +128,7 @@ There are as many answers as there are musicians. </div></div>
 <div class="slide">
 <h1>Basic Algorithms 1 of 2
 
-</h1><p># Setup, Sync, & Write
+</h1><p>&#x2022; Setup, Sync, & Write
 
 </p><pre>use MIDI::Util qw(setup_score);
 
@@ -168,7 +168,7 @@ sub treble {
 <div class="slide">
 <h1>Basic Algorithms 1 of 3
 
-</h1><p># Using random pitches instead of static
+</h1><p>&#x2022; Using random pitches instead of static
 
 </p><pre>use MIDI::Util qw(setup_score set_chan_patch); # New import
 use Music::Scales qw(get_scale_MIDI);          # New module
@@ -224,7 +224,7 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
 <div class="slide">
 <h1>Basic Algorithms 1 of 2
 
-</h1><p># Play a list of named chords held for a whole note each
+</h1><p>&#x2022; Play a list of named chords held for a whole note each
 
 </p><pre>use MIDI::Util qw(setup_score midi_format);  # New import
 use Music::Scales qw(get_scale_MIDI);
@@ -277,7 +277,7 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
 <div class="slide">
 <h1>Instantiate a Drummer
 
-</h1><p># Everything needed to add drums to a MIDI score and more
+</h1><p>&#x2022; Everything needed to add drums to a MIDI score and more
 
 </p><pre>my $drummer = MIDI::Drummer::Tiny->new(
   file   => $self->filename,
@@ -290,7 +290,7 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
 <div class="slide">
 <h1>Figured Bass Part 1 of 3
 
-</h1><p># Phrase generator for rhythmic motifs
+</h1><p>&#x2022; Phrase generator for rhythmic motifs
 
 </p><pre>my $phrase = Music::Duration::Partition->new(
   size    => 3,                   # Number of beats to render
