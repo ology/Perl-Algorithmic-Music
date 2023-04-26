@@ -8,7 +8,7 @@ Set locktime to 30 min. Search settings for:
 
 > cd /home/gene/sandbox/Perl-Algorithmic-Music/
 
-> vit parse-notes.pl
+> vit code/parse-notes.pl
 :!perl % slides.pod > slides/notes.html
 
 > vit slides.pod
@@ -19,6 +19,6 @@ Set locktime to 30 min. Search settings for:
 
 Or:
 
-> perl parse-notes.pl slides.pod > slides/notes.html
+> perl code/parse-notes.pl slides.pod > slides/notes.html
 
 > pod2s5 slides.pod --name "https://ology.net/dev/Perl-Algorithmic-Music/" --where "Toronto, ON" --company "Gene Boggs" --author "Gene Boggs" > /dev/null 2>&1
