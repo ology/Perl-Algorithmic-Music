@@ -6,7 +6,7 @@ L<Gene Boggs|https://github.com/ology>
 
 <img src="flowchart.png">
 <br>
-<audio controls><source type="audio/mp3" src="Eno-2_2.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/Eno-2_2.mp3"></audio>
 <br>
 <span style="font-size: medium;">- <a href="http://en.wikipedia.org/wiki/Brian+Eno">Brian Eno</a> - exerpt from "Music For Airports"</span>
 
@@ -199,7 +199,7 @@ sub treble {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-1-otj.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/code-1-otj.mp3"></audio>
 
 =end html
 
@@ -292,7 +292,7 @@ sub treble {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-2-random.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/code-2-random.mp3"></audio>
 
 =end html
 
@@ -360,9 +360,9 @@ sub chords {
 
 =begin html
 
-<audio controls><source type="audio/mp3" src="code-3-chords1.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/code-3-chords1.mp3"></audio>
 <p></p>
-<audio controls><source type="audio/mp3" src="code-3-chords2.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/code-3-chords2.mp3"></audio>
 
 =end html
 
