@@ -8,7 +8,7 @@ L<Gene Boggs|https://github.com/ology>
 <br>
 <audio controls><source type="audio/mp3" src="audio/Eno-2_2.mp3"></audio>
 <br>
-<span style="font-size: medium;">- <a href="http://en.wikipedia.org/wiki/Brian+Eno">Brian Eno</a> - exerpt from "Music For Airports"</span>
+<span style="font-size: medium;"><a href="http://en.wikipedia.org/wiki/Brian+Eno">Brian Eno</a> - exerpt from "Music For Airports"</span>
 
 =end html
 
@@ -20,7 +20,41 @@ Let's talk about music!
 
 The first part will cover some concepts, which I will try to whip-though, so we can get to the algorithms.
 
-These slides are live at the link on the bottom of the pages, if you want to follow along or reread what just happened.
+These slides are live at my github link on the bottom of each page, if you want to follow along or reread what just happened.
+
+=end note
+
+=head1 What this IS about
+
+=over
+
+=item *
+
+Applied music theory
+
+=item *
+
+Writing MIDI files
+
+=item *
+
+High-level, OO MIDI score construction
+
+=over
+
+=item Audio LEGOs
+
+=back
+
+=item *
+
+Good ol' procedural algorithms
+
+=back
+
+=begin note
+
+...
 
 =end note
 
@@ -59,40 +93,6 @@ Kittens!
 =head1 Sorry!
 
 G<https://placekitten.com/400/400>
-
-=head1 What this IS about
-
-=over
-
-=item *
-
-Applied music theory
-
-=item *
-
-Writing MIDI files
-
-=item *
-
-High-level, OO MIDI score construction
-
-=over
-
-=item Audio LEGOs
-
-=back
-
-=item *
-
-Good ol' procedural algorithms
-
-=back
-
-=begin note
-
-...
-
-=end note
 
 =head1 Fundamental Questions
 
