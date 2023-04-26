@@ -12,7 +12,7 @@ L<Gene Boggs|https://github.com/ology>
 
 =end html
 
-TPRC 2023 - Toronto, ON
+L<TPRC 2023|https://tprc.to/tprc-2023-tor/> - Toronto, ON
 
 =begin note
 
