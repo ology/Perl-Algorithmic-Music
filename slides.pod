@@ -36,7 +36,7 @@ Writing MIDI files
 
 =item *
 
-High-level, object-oriented MIDI score construction
+High-level, object-oriented score construction
 
 =over
 
