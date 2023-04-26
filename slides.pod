@@ -40,7 +40,7 @@ High-level, object-oriented score construction
 
 =over
 
-=item Audio LEGOs
+=item A.K.A. "Audio LEGOs"
 
 =back
 
