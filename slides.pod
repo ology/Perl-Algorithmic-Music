@@ -10,7 +10,7 @@ G<https://ology.net/images/perl-gene.jpg> L<Gene Boggs|https://github.com/ology>
 
 =end html
 
-L<TPRC 2023|https://tprc.to/tprc-2023-tor/> - Toronto, ON
+L<TPRC 2023|https://tprc.to/tprc-2023-tor/> &#x2022; Toronto, ON
 
 =begin note
 
