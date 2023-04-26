@@ -78,7 +78,7 @@ Artificial intelligence techniques (e.g. generative adversarial networks)
 
 =item *
 
-I<Kittens!>
+Kittens!
 
 =back
 
