@@ -144,7 +144,7 @@ Linked music construction modules are those mentioned in this presentation.
 
 =head1 Basic Algorithms 1 of 2
 
-# Setup, Synch, & Write
+# Setup, Sync, & Write
 
 =begin pre
 
