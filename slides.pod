@@ -142,7 +142,7 @@ Linked music construction modules are those mentioned in this presentation.
 
 =head1 Basic Algorithms 1 of 2
 
-&#x2022; Setup, Sync, & Write
+&#x2022; B<Setup, Sync, & Write>
 
 =begin pre
 
@@ -210,7 +210,7 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 3
 
-&#x2022; Using random pitches instead of static
+&#x2022; B<Using random pitches instead of static>
 
 =begin pre
 
@@ -304,7 +304,7 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 2
 
-&#x2022; Play a list of named chords held for a whole note each
+&#x2022; B<Play a list of named chords held for a whole note each>
 
 =begin pre
 
@@ -399,7 +399,7 @@ morbo groovetool.pl  # L<http://127.0.0.1:3000>
 
 =head1 Instantiate a Drummer
 
-&#x2022; Everything needed to add drums to a MIDI score and more
+&#x2022; B<Everything needed to add drums to a MIDI score and more>
 
 =begin pre
 
@@ -422,7 +422,7 @@ my $drummer = MIDI::Drummer::Tiny->new(
 
 =head1 Figured Bass Part 1 of 3
 
-&#x2022; Phrase generator for rhythmic motifs
+&#x2022; B<Phrase generator for rhythmic motifs>
 
 =begin pre
 
