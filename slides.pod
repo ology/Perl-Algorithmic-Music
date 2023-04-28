@@ -92,6 +92,14 @@ Kittens!
 
 G<https://placekitten.com/400/400>
 
+=begin note
+
+This presentation used to have a bunch more words - concepts, descriptions, types, and techniques, etc.
+
+But it took way too long before getting to the algorithms!
+
+=end note
+
 =head1 Fundamental Questions
 
 =over
