@@ -415,11 +415,11 @@ sub chords {
 
 =item *
 
-Generate combinatorial rhythmic patterns, e.g. Euclidean and Christoffel words
+Generate combinatorial rhythmic patterns
 
 =item *
 
-Produce a randomized, figured bass part
+Produce a randomized, figured bass
 
 =item *
 
