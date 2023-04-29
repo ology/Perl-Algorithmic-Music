@@ -423,7 +423,7 @@ Produce a randomized, figured bass
 
 =item *
 
-> morbo groovetool.pl  # L<http://127.0.0.1:3000>
+morbo groovetool.pl  # L<http://127.0.0.1:3000>
 
 =back
 
