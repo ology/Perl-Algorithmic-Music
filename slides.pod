@@ -62,15 +62,15 @@ Good ol' procedural algorithms
 
 =item *
 
-Song / audio I<analysis>
+Song or audio I<analysis>
 
 =item *
 
-I<Real-time> audio / MIDI processing
+I<Real-time> audio or MIDI processing
 
 =item *
 
-I<Low-level> MIDI events, like note_on, note_off, sysex, etc.
+I<Low-level> MIDI events, like note_on, note_off, or sysex messages
 
 =item *
 
