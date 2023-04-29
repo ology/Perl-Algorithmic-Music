@@ -100,7 +100,7 @@ But it took way too long before getting to the algorithms!
 
 =end note
 
-=head1 Why Do Algorithmic Music?
+=head1 Why Make Algorithmic Music?
 
 =over
 
