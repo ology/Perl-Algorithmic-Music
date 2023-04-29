@@ -28,7 +28,7 @@ sub bass {
 }
 
 sub treble {
-  set_chan_patch($score, 1, 4);
+  set_chan_patch($score, 1, 0);
 
   my @pitches = (
     get_scale_MIDI('C', 4, 'major'),
