@@ -70,7 +70,7 @@ I<Real-time> audio / MIDI processing
 
 =item *
 
-I<Low-level> handling of MIDI events (e.g. note_on, note_off, sysex)
+I<Low-level> MIDI events, like note_on, note_off, sysex, etc.
 
 =item *
 
