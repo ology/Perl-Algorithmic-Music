@@ -100,6 +100,34 @@ But it took way too long before getting to the algorithms!
 
 =end note
 
+=head1 Why Do Algorithmic Music?
+
+=over
+
+=item *
+
+Musical creation in and of itself!
+
+=item *
+
+To satisfy curiosities
+
+=item *
+
+For practice and study, with etudes and rhythms
+
+=item *
+
+To make and import fragments into a larger context, like a digital audio workstation ("DAW")
+
+=back
+
+=begin note
+
+...
+
+=end note
+
 =head1 Fundamental Questions
 
 =over
