@@ -74,7 +74,7 @@ I<Low-level> MIDI events, like note_on, note_off, sysex, etc.
 
 =item *
 
-Artificial intelligence techniques (e.g. generative adversarial networks)
+Artificial intelligence techniques, like generative adversarial networks
 
 =item *
 
