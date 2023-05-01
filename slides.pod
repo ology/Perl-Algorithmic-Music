@@ -162,7 +162,7 @@ These are the questions we will have to answer if we want to create algorithmic 
 
 If we don't care about traditions, then anything goes! The idea of phrase development itself is controversial. E.g. Brian Eno, Primus guitar.
 
-There are as many answers as there are musicians. And there are probably more ways to make algorithmic music than there are programmers.
+There are as many answers as there are musicians. (And there are more ways to make algorithmic music than there are programmers.)
 
 =end note
 
