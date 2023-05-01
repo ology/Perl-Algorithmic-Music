@@ -302,7 +302,7 @@ Also we can get midinum pitches by just adding 60 to any sequence of digits.
 sub treble {
   my ($score) = @_;
 
-  set_chan_patch($score, 1, 0);        # Electric piano on ch 1
+  set_chan_patch($score, 1, 0);        # Piano on ch 1
 
   my @pitches = (
     get_scale_MIDI('C', 4, 'major'),
