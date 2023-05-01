@@ -291,7 +291,7 @@ sub bass {
 
 =begin note
 
-...
+Also we can get midinum pitches by just adding 60 to any sequence of digits.
 
 =end note
 
