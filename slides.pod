@@ -20,6 +20,8 @@ The first part will cover some concepts, which I will try to whip-though, so we 
 
 These slides are live at my github link on the bottom of each page, if you want to follow along or reread what just happened.
 
+Also my cards have a QR link to my github page that has a link to this slideshow.
+
 =end note
 
 =head1 What this IS about
@@ -96,7 +98,7 @@ G<https://placekitten.com/500/500>
 
 This presentation used to have a bunch more words - concepts, descriptions, types, and techniques, etc.
 
-But it took way too long before getting to the algorithms!
+But it took way too long!
 
 =end note
 
