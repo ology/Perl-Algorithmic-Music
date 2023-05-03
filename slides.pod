@@ -535,7 +535,7 @@ L<on GitHub|https://github.com/ology/Perl-Algorithmic-Music>
 
 L<Perl Algorithmic Composition Tutorial|https://github.com/ology/MIDI-Perl-HOWTO/wiki>
 
-The L<#perl-music|irc://irc.perl.org:6667/#perl-music> IRC channel on irc.perl.org
+The L<#perl-music|irc://irc.perl.org:6667/#perl-music> channel on irc.perl.org
 
 The L<Groove-Tool|https://github.com/ology/Groove-Tool>,
 L<Rock-Tool|https://github.com/ology/Rock-Tool> and
