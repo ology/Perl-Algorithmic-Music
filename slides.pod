@@ -421,7 +421,7 @@ Generate combinatorial rhythmic patterns
 
 =item *
 
-Produce a randomized, figured bass
+Produce a randomized, figured bass line
 
 =item *
 
