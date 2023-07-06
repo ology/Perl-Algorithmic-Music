@@ -174,7 +174,7 @@ App::MusicTools Csound Guitar::Scale MIDI MIDI::Bassline::Walk MIDI::Chord::Guit
 
 =begin note
 
-Linked music construction modules are those mentioned in this presentation.
+Linked modules are those mentioned in this presentation.
 
 =end note
 
