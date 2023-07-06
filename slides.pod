@@ -399,9 +399,9 @@ sub chords {
 =begin html
 
 <p></p>
-<audio controls><source type="audio/mp3" src="audio/3-chords1.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/3-chords-1.mp3"></audio>
 <p></p>
-<audio controls><source type="audio/mp3" src="audio/3-chords2.mp3"></audio>
+<audio controls><source type="audio/mp3" src="audio/3-chords-2.mp3"></audio>
 
 =end html
 
