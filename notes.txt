@@ -13,7 +13,7 @@ Set locktime to 30 min. Search settings for:
 :!pod2s5 % --name "https://ology.github.io/Perl-Algorithmic-Music/" --where "Toronto, ON" --company "Gene Boggs" --author "Gene Boggs" --dest '.' > /dev/null 2>&1
 
 > vit code/*.pl
-:!rm %.mid ; perl % ; timidity %.mid
+:!rm %.mid ; perl % ; timidity -c timidity.cfg -A300a %.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/%.mp3
 
 Or:
 
