@@ -150,10 +150,6 @@ How do you structure a tune?
 
 =over
 
-=item ALL GOOD QUESTIONS!!1!
-
-=back
-
 =back
 
 =begin note
