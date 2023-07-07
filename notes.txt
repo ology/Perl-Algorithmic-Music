@@ -6,6 +6,8 @@ Set locktime to 30 min. Search settings for:
       Auto lock when screen turns off
         30 minutes
 
+And:
+
 > vit code/parse-notes.pl
 :!perl % slides.pod > notes.html
 
