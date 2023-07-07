@@ -8,13 +8,15 @@ use Music::Scales qw(get_scale_MIDI);
 my $score = setup_score(bpm => 120);
 
 $score->synch(
-  \&bass,
-  \&treble,
+  sub { bass($score) },
+  sub { treble($score) },
 ) for 1 .. 4;
 
 $score->write_score("$0.mid");
 
 sub bass {
+  my ($score) = @_;
+
   set_chan_patch($score, 0, 35);
 
   my @pitches = (
@@ -28,6 +30,8 @@ sub bass {
 }
 
 sub treble {
+  my ($score) = @_;
+
   set_chan_patch($score, 1, 0);
 
   my @pitches = (
