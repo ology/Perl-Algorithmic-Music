@@ -9,7 +9,7 @@
 <meta name="generator" content="pod2s5 0.09" />
 <meta name="generator" content="S5" />
 <meta name="version" content="S5 1.1" />
-<meta name="presdate" content="Thu Jul  6 13:30:22 2023" />
+<meta name="presdate" content="Thu Jul  6 19:43:32 2023" />
 <meta name="author" content="Gene Boggs" />
 <meta name="company" content="Gene Boggs" />
 <!-- configuration parameters -->
@@ -47,7 +47,7 @@ img#me05 {top: 43px;left: 36px;}
 <div id="currentSlide"></div>
 <div id="header"></div>
 <div id="footer">
-<h1>Toronto, ON &#8226; Thu Jul  6 13:30:22 2023</h1>
+<h1>Toronto, ON &#8226; Thu Jul  6 19:43:32 2023</h1>
 <h2>https://ology.github.io/Perl-Algorithmic-Music/</h2></div>
 </div><div class="slide">
 <h1>Algorithmic Music with Perl
@@ -211,7 +211,7 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
     my $pitch = $pitches[int rand @pitches];  # Random pitch
     $score->n('hn', $pitch);                  # Add note to score
   }
-} </pre><div class="notes">Also we can get midinum pitches by just adding 60 to any sequence of digits. </div></div>
+} </pre><div class="notes">... </div></div>
 <div class="slide">
 <h1>Basic Algorithms 3 of 3
 
@@ -304,7 +304,7 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
   # etc...
 ); </pre><div class="notes">... </div></div>
 <div class="slide">
-<h1>Figured Bass Part 1 of 3
+<h1>Figured Bass Part 1 of 2
 
 </h1><p>&#x2022; <b>Phrase generator for rhythmic motifs</b>
 
@@ -317,7 +317,7 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
 
 my @motifs = $phrase->motifs(2); </pre><div class="notes">... </div></div>
 <div class="slide">
-<h1>Figured Bass Part 2 of 3
+<h1>Figured Bass Part 2 of 2
 
 </h1><pre>my @pitches = get_scale_MIDI($note, $octave, $scale);
 
@@ -328,20 +328,6 @@ my $voice = Music::VoiceGen->new(
 
 # main phrase voices
 my @voices1 = map { $voice->rand } $motifs[0]->@*; </pre><div class="notes">Music::VoiceGen module by Jeremy Mates (AKA thrig) - I know you're out there! </div></div>
-<div class="slide">
-<h1>Figured Bass Part 3 of 3
-
-</h1><pre>for my $i (1 .. $bars) {
-  if ($i % 2) {
-    $phrase->add_to_score($drummer->score, $motifs[0], \@voices1);
-  }   
-  else {
-    my @voices2 = map { $voice->rand } $motifs[1]->@*;
-    $phrase->add_to_score($drummer->score, $motifs[1], \@voices2);
-  }   
-
-  $drummer->rest($drummer->quarter);
-} </pre><div class="notes">... </div></div>
 <div class="slide">
 <h1>Links
 
