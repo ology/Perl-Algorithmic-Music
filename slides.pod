@@ -148,8 +148,6 @@ How do you make a melody?
 
 How do you structure a tune?
 
-=over
-
 =back
 
 =begin note
