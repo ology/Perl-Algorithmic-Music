@@ -24,7 +24,7 @@ Also my cards have a QR link to my github that has a link to this slideshow.
 
 =end note
 
-=head1 What this IS about
+=head1 What this *is* about
 
 =over
 
@@ -58,7 +58,7 @@ Good ol' procedural algorithms
 
 =end note
 
-=head1 What this is NOT about
+=head1 What this is *not* about
 
 =over
 
