@@ -96,7 +96,7 @@ G<https://placekitten.com/500/500>
 
 =begin note
 
-This presentation used to have a bunch more words - concepts, descriptions, types, and techniques, etc. But it took way too long!
+This used to have a bunch more words: concepts, descriptions, types, and techniques. But it took way too long! See the OLD/ directory, in the github repo.
 
 =end note
 
