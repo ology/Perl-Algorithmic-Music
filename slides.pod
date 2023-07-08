@@ -242,7 +242,7 @@ sub treble {
 
 =head1 Basic Algorithms 1 of 3
 
-&#x2022; B<Using random pitches instead of static>
+&#x2022; B<Use random pitches instead of static>
 
 =begin pre
 
