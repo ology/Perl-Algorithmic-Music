@@ -289,19 +289,6 @@ $score->write_score("$0.mid"); </pre><div class="notes">... </div></div>
 
 </p></li></ul class="incremental"><div class="notes">... </div></div>
 <div class="slide">
-<h1>Instantiate a Drummer
-
-</h1><p>&#x2022; <b>Everything needed to add drums to a MIDI score and more</b>
-
-</p><pre>my $drummer = MIDI::Drummer::Tiny->new(
-  file   => $self->filename,
-  bars   => 4 * $self->repeat,
-  bpm    => $self->bpm,
-  reverb => $self->reverb,
-  volume => $self->volume,
-  # etc...
-); </pre><div class="notes">... </div></div>
-<div class="slide">
 <h1>Figured Bass Part 1 of 2
 
 </h1><p>&#x2022; <b>Phrase generator for rhythmic motifs</b>
