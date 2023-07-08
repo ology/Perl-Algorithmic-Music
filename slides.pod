@@ -431,29 +431,6 @@ morbo groovetool.pl  # L<http://127.0.0.1:3000>
 
 =end note
 
-=head1 Instantiate a Drummer
-
-&#x2022; B<Everything needed to add drums to a MIDI score and more>
-
-=begin pre
-
-my $drummer = MIDI::Drummer::Tiny->new(
-  file   => $self->filename,
-  bars   => 4 * $self->repeat,
-  bpm    => $self->bpm,
-  reverb => $self->reverb,
-  volume => $self->volume,
-  # etc...
-);
-
-=end pre
-
-=begin note
-
-...
-
-=end note
-
 =head1 Figured Bass Part 1 of 2
 
 &#x2022; B<Phrase generator for rhythmic motifs>
