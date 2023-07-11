@@ -18,7 +18,7 @@ $score->write_score("$0.mid");
 sub chords {
     my ($score) = @_;
 
-    set_chan_patch($score, 0, 35);
+    set_chan_patch($score, 1, 0);
 
     my $mcn = Music::Chord::Note->new;
 
