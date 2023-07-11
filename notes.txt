@@ -30,7 +30,7 @@ Or:
 > rm audio/2-random.mp3 ; timidity -c timidity.cfg -A100a code/2-random.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/2-random.mp3
 
 > rm code/3-chords-1.pl.mid ; perl code/3-chords-1.pl
-> audio/3-chords-1.mp3 ; timidity -c timidity.cfg -A100a code/3-chords-1.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/3-chords-1.mp3
+> rm audio/3-chords-1.mp3 ; timidity -c timidity.cfg -A100a code/3-chords-1.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/3-chords-1.mp3
 
 > rm code/3-chords-2.pl.mid ; perl code/3-chords-2.pl
 > rm audio/3-chords-2.mp3 ; timidity -c timidity.cfg -A100a code/3-chords-2.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/3-chords-2.mp3
