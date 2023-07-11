@@ -18,9 +18,7 @@ Let's talk about music!
 
 The first part will cover some concepts, which I will try to whip-though, so we can get to the algorithms.
 
-These slides are live at my github link on the bottom of each page, if you want to follow along or reread what just happened.
-
-Also my cards have a QR link to my github that has a link to this slideshow.
+If you want to follow along or reread what just happened, these slides are live at the link on the bottom of the pages.
 
 =end note
 
