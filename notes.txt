@@ -34,3 +34,4 @@ Or:
 
 > rm -f code/3-chords-2.pl.mid ; perl code/3-chords-2.pl
 > rm -f audio/3-chords-2.mp3 ; timidity -c timidity.cfg -A10a code/3-chords-2.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/3-chords-2.mp3
+
