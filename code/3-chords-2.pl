@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 use Data::Dumper::Compact qw(ddc);
-use MIDI::Util qw(setup_score midi_format);
+use MIDI::Util qw(setup_score midi_format set_chan_patch);
 use Music::Chord::Note ();
 use Music::Scales qw(get_scale_MIDI);
 
