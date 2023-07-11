@@ -10,7 +10,6 @@ use Music::Scales qw(get_scale_MIDI);
 my $score = setup_score();
 $score->synch(
     sub { chords($score) },
-    #sub { treble($score) },
 );
 
 $score->write_score("$0.mid");
@@ -26,19 +25,5 @@ sub chords {
         print ddc(\@chord);  # [ 'C4', 'Ds4', 'G4', 'As4' ], etc.
 
         $score->n('wn', @chord);
-    }
-}
-
-sub treble {
-    my ($score) = @_;
-
-    my @pitches = (
-        get_scale_MIDI('C', 4, 'minor'),
-        get_scale_MIDI('C', 5, 'minor'),
-    );
-
-    for my $n (1 .. 4 * 7) { # bars * number of bars
-        my $pitch = $pitches[int rand @pitches];
-        $score->n('qn', $pitch);
     }
 }
