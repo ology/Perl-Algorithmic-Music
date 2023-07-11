@@ -176,9 +176,8 @@ sub treble {
 </h1><p></p>
 <audio controls><source type="audio/mp3" src="audio/1-otj.mp3"></audio>
 
-<pre>> rm -f audio/2-random.mp3 ; timidity -c timidity.cfg -A10a \
-  code/2-random.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame \
-  -ab 64k audio/2-random.mp3 </pre><div class="notes">... </div></div>
+<pre>> timidity -c timidity.cfg -A10a code/2-random.pl.mid -Ow -o - \
+  | ffmpeg -i - -acodec libmp3lame -ab 64k audio/2-random.mp3 </pre><div class="notes">... </div></div>
 <div class="slide">
 <h1>Basic Algorithms 1 of 3
 
