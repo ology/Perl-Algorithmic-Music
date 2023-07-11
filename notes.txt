@@ -24,13 +24,17 @@ Or:
 > pod2s5 slides.pod --name "https://ology.github.io/Perl-Algorithmic-Music/" --creation "Wed Jul 12 2023" --where "Toronto, ON" --company "Gene Boggs" --author "Gene Boggs" --dest '.' > /dev/null 2>&1
 
 > rm code/1-otj.pl.mid ; perl code/1-otj.pl
+> rm audio/1-otj.mp3
 > timidity -c timidity.cfg -A100a code/1-otj.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/1-otj.mp3
 
 > rm code/2-random.pl.mid ; perl code/2-random.pl
+> rm audio/2-random.mp3
 > timidity -c timidity.cfg -A100a code/2-random.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/2-random.mp3
 
 > rm code/3-chords-1.pl.mid ; perl code/3-chords-1.pl
+> audio/3-chords-1.mp3
 > timidity -c timidity.cfg -A100a code/3-chords-1.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/3-chords-1.mp3
 
 > rm code/3-chords-2.pl.mid ; perl code/3-chords-2.pl
+> rm audio/3-chords-2.mp3
 > timidity -c timidity.cfg -A100a code/3-chords-2.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/3-chords-2.mp3
