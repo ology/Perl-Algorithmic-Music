@@ -232,7 +232,11 @@ sub treble {
 
 =end html
 
-Made with C<timidity>, C<ffmpeg>, and C<lame>.
+=begin pre
+
+> rm -f audio/2-random.mp3 ; timidity -c timidity.cfg -A10a code/2-random.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/2-random.mp3
+
+=end pre
 
 =begin note
 
