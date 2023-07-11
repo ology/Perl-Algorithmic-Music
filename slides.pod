@@ -232,6 +232,8 @@ sub treble {
 
 =end html
 
+Made with C<timidity>, C<ffmpeg>, and C<lame>.
+
 =begin note
 
 ...
