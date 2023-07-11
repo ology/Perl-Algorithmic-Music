@@ -24,7 +24,7 @@ Also my cards have a QR link to my github that has a link to this slideshow.
 
 =end note
 
-=head1 GitHub link to talk
+=head1 GitHub link to presentation
 
 G<https://ology.github.io/Perl-Algorithmic-Music/github-qr.jpg>
 
