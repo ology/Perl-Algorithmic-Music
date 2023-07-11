@@ -1,6 +1,6 @@
 =head1 Algorithmic Music with Perl
 
-G<https://ology.github.io/Perl-Algorithmic-Music/github-qr.jpg> L<Gene Boggs|https://github.com/ology>
+G<https://ology.net/images/perl-gene.jpg> L<Gene Boggs|https://github.com/ology>
 
 =begin html
 
@@ -21,6 +21,16 @@ The first part will cover some concepts, which I will try to whip-though, so we 
 These slides are live at my github link on the bottom of each page, if you want to follow along or reread what just happened.
 
 Also my cards have a QR link to my github that has a link to this slideshow.
+
+=end note
+
+=head1 GitHub link to talk
+
+G<https://ology.github.io/Perl-Algorithmic-Music/github-qr.jpg>
+
+=begin note
+
+...
 
 =end note
 
