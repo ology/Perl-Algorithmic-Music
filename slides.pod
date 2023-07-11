@@ -234,7 +234,9 @@ sub treble {
 
 =begin pre
 
-> rm -f audio/2-random.mp3 ; timidity -c timidity.cfg -A10a code/2-random.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k audio/2-random.mp3
+> rm -f audio/2-random.mp3 ; timidity -c timidity.cfg -A10a \
+  code/2-random.pl.mid -Ow -o - | ffmpeg -i - -acodec libmp3lame \
+  -ab 64k audio/2-random.mp3
 
 =end pre
 
