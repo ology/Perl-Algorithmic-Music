@@ -18,6 +18,8 @@ $score->write_score("$0.mid");
 sub chords {
     my ($score) = @_;
 
+    set_chan_patch($score, 0, 35);
+
     my $mcn = Music::Chord::Note->new;
 
     for my $named (qw(Cm7 F7 BbM7 EbM7 Adim7 D7 Gm)) {
@@ -31,6 +33,8 @@ sub chords {
 
 sub treble {
     my ($score) = @_;
+
+    set_chan_patch($score, 0, 0);
 
     my @pitches = (
         get_scale_MIDI('C', 4, 'minor'),
