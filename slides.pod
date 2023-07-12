@@ -32,11 +32,7 @@ Writing MIDI files
 
 =item *
 
-High-level, object-oriented score construction
-
-=over
-
-=item A.K.A. "Audio LEGOs"
+High-level, object-oriented score construction ("Audio LEGOs")
 
 =back
 
