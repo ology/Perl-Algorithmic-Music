@@ -34,8 +34,6 @@ Writing MIDI files
 
 High-level, object-oriented score construction ("Audio LEGOs")
 
-=back
-
 =item *
 
 Good ol' procedural algorithms
