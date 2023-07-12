@@ -28,10 +28,6 @@ If you want to follow along or reread what just happened, these slides are live 
 
 =item *
 
-Applied music theory
-
-=item *
-
 Writing MIDI files
 
 =item *
