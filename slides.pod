@@ -461,6 +461,10 @@ my $voice = Music::VoiceGen->new(
 # main phrase voices
 my @voices1 = map { $voice->rand } $motifs[0]->@*;
 
+# ... more code ...
+
+my @voices2 = map { $voice->rand } $motifs[1]->@*;
+
 =end pre
 
 =begin note
